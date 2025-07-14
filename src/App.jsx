@@ -1,9 +1,20 @@
-import { Link } from "react-router-dom"
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom"
+import MainLayout from "./Layouts/MainLayout"
 
 const App = () => {
+    
+    const router = createBrowserRouter(
+      createRoutesFromElements(
+        <Route path="/" element={<MainLayout/>}>
+
+        </Route>
+      )
+    )
+
     return (
       <div>
-        <NavBar></NavBar>
+        <RouterProvider router={router}/>
+
       </div>
     )
 }
