@@ -82,9 +82,25 @@
 
 .first{
     border: 1px solid black;
+    height: 305px;
+}
+
+.info{
+    background-color: black;
 }
 
 .info p{
     margin-top: -4px;
     color: white;
+    font-size: 14px;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottom button{
+    margin-top: -20px;
 }
