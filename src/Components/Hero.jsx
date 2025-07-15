@@ -1,7 +1,9 @@
 import styles from '../Components/Hero.module.css'
 import fst from '../assets/images/iPhone-XR.png'
 import snd from '../assets/images/iPhone-16-Plus.png'
-
+import { CiLocationOn } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+import { CiDollar } from "react-icons/ci";
 
 const Hero = () => {
     return (
@@ -25,10 +27,13 @@ const Hero = () => {
                             <img src={snd} alt="" />
                         </div>
                         <div className={styles.info}>
-                            <p>NAME</p>
-                            <p>Location</p>
+                            <p><CiUser />
+                            NAME</p>
+                            <p><CiLocationOn />
+                                Location</p>
                             <div className={styles.bottom}>
-                            <p>Price</p>
+                            <p><CiDollar /> 
+                                Price</p>
                             <button>View</button>
                             </div>
                         </div>
