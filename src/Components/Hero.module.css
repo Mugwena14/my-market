@@ -75,3 +75,16 @@
     min-width: 50%;
     margin-top: 20px;
 }
+
+.image img{
+    width: 220px;
+}
+
+.first{
+    border: 1px solid black;
+}
+
+.info p{
+    margin-top: -4px;
+    color: white;
+}

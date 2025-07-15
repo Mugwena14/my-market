@@ -1,4 +1,6 @@
 import styles from '../Components/Hero.module.css'
+import fst from '../assets/images/iPhone-XR.png'
+import snd from '../assets/images/iPhone-16-Plus.png'
 
 
 const Hero = () => {
@@ -20,7 +22,7 @@ const Hero = () => {
                 <div className={styles.right}>
                     <div className={styles.first}>
                         <div className={styles.image}>
-                            <img src="" alt="" />
+                            <img src={snd} alt="" />
                         </div>
                         <div className={styles.info}>
                             <p>NAME</p>
