@@ -28,12 +28,21 @@ const Hero = () => {
                         </div>
                         <div className={styles.info}>
                             <p><CiUser />
-                            NAME</p>
+                            <span className={styles.tags}>
+                                NAME
+                            </span>
+                            </p>
                             <p><CiLocationOn />
-                                Location</p>
+                            <span className={styles.tags}>
+                                Location
+                            </span>
+                            </p>
                             <div className={styles.bottom}>
                             <p><CiDollar /> 
-                                Price</p>
+                            <span className={styles.tags}>
+                                Price
+                            </span>
+                            </p>
                             <button>View</button>
                             </div>
                         </div>
