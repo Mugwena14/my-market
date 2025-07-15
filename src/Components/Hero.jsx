@@ -33,6 +33,19 @@ const Hero = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.first}>
+                        <div className={styles.image}>
+                            <img src={snd} alt="" />
+                        </div>
+                        <div className={styles.info}>
+                            <p>NAME</p>
+                            <p>Location</p>
+                            <div className={styles.bottom}>
+                            <p>Price</p>
+                            <button>View</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
