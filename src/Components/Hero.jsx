@@ -1,5 +1,4 @@
 import styles from '../Components/Hero.module.css'
-import fst from '../assets/images/iPhone-XR.png'
 import snd from '../assets/images/iPhone-16-Plus.png'
 import { CiLocationOn } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
