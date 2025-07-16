@@ -7,6 +7,18 @@ body{
     flex-direction: row;
     justify-content: space-between;
     margin: 10px 20px;
+    background-color:  hsla(0, 0%, 100%, 0.925);
+    margin: 0;
+    padding: 10px 30px;
+}
+
+.fixed{
+    position: sticky;
+    backdrop-filter: blur(100px);
+    right: 0;
+    z-index: 1000;
+    top: 0;
+    left: 0;
 }
 
 .links{
@@ -16,7 +28,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    
+    text-align: end;
 }
 
 .link{
