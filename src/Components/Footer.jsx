@@ -1,10 +1,13 @@
 import styles from './Footer.module.css';
 
 const  Footer = () => {
+
+    const currentYear = new Date().getFullYear();
+
     return (
         <footer>
             <div className={styles.top}>
-                <p>&copy; Built by Makhubele Langavi Clyde | Junior-Front-End Developer | React</p>
+                <p>&copy; {currentYear} Built by Makhubele Langavi Clyde | Junior-Front-End Developer | React</p>
                 <p>Open to Full-Time Opportunities or Freelance roles, Let's Connect:</p>
             </div>
             <div className={styles.connect}>
