@@ -139,7 +139,7 @@ button:hover{
 }
 
 
-@media(min-width: 800px){
+@media(min-width: 760px){
     .hideMenu{
         display: none;
     }
