@@ -20,9 +20,9 @@ const NavBar = () => {
                 <h3>Yoo Loop</h3>
                 </div>
                 <div className={styles.links}>
-                    <Link className={styles.link} to="/index">Home</Link>
+                    <Link className={styles.link} to="/Index">Home</Link>
                     <Link className={styles.link} to="/About">About</Link>
-                    <Link className={styles.link} to="/buy">Explore</Link>
+                    <Link className={styles.link} to="/Buy">Explore</Link>
                     <button className={styles.bt}>Sell</button>
                     {showFull ? (
                         <>

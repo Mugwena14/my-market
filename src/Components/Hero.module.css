@@ -7,8 +7,8 @@
     gap: 1rem;
 }
 
-.link{
-    
+.link:focus{
+    text-decoration: 2px underline black;
 }
 
 .left{
