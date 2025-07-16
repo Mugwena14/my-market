@@ -23,7 +23,7 @@ const NavBar = () => {
                     <Link className={styles.link} to="/index">Home</Link>
                     <Link className={styles.link} to="/about">About</Link>
                     <Link className={styles.link} to="/buy">Explore</Link>
-                    <button>Sell</button>
+                    <button className={styles.bt}>Sell</button>
                     {showFull ? (
                         <>
                             <a onClick={() => showSideBar()} className={styles.hideMenu}><IoMdClose /></a>

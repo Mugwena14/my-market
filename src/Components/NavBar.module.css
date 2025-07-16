@@ -128,3 +128,24 @@ button:hover{
     height: auto;
 }
 
+@media(max-width: 760px){
+    .link{
+        display: none;
+    }.side{
+        width: 100%;
+    }.bt{
+        display: none;
+    }
+}
+
+
+@media(min-width: 800px){
+    .hideMenu{
+        display: none;
+    }
+    .sideMenu{
+        display: none;
+    }
+}
+
+
