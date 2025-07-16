@@ -24,6 +24,13 @@ footer{
     padding-right: 50px;
 }
 
+.connectLeft p{
+    margin-top: -2px;
+}
+.connectRight p{
+    margin-top: -2px;
+}
+
 .connect a{
     text-decoration: 1px underline white;
     color: white;
@@ -39,12 +46,14 @@ footer{
         flex-direction: column;
         border: none;
         text-align: center;
-        font-size: 15px;
+        font-size: 13px;
     }.connectLeft{
         border-right: none;
         text-align: center;
         padding: 0;
     }.connectRight{
         margin-top: -40px;
+    }.top{
+        font-size: 15px;
     }
 }
