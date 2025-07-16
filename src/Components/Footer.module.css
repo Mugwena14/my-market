@@ -20,18 +20,18 @@ footer{
 }
 
 .connectLeft{
-    border-right: 1px solid white;
     padding-right: 50px;
+    border-right: 1px solid white;
 }
 
 .connect a{
-    text-decoration: 1px underline white;
     color: white;
+    text-decoration: 1px underline white;
 }
 
 .connect a:hover{
-    text-decoration: 1px underline blue;
     color: blue;
+    text-decoration: 1px underline blue;
 }
 
 @media(max-width: 800px) {
