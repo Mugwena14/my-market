@@ -1,9 +1,9 @@
-import React from 'react'
+import styles from 
 
 const About = () => {
     return (
-        <div>
-            <p>About</p>
+        <div className={styles.about}>
+            <h2>About this Market-Place</h2>
         </div>
     )
 }

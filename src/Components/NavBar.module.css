@@ -42,7 +42,7 @@ body{
     text-decoration: 3px underline hsl(0, 0%, 20%);
 }
 
-.link:active{
+.link:focus{
     text-decoration: 3px underline hsl(0, 0%, 20%);
 }
 
