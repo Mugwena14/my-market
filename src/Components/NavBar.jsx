@@ -21,7 +21,7 @@ const NavBar = () => {
                 </div>
                 <div className={styles.links}>
                     <Link className={styles.link} to="/index">Home</Link>
-                    <Link className={styles.link} to="/about">About</Link>
+                    <Link className={styles.link} to="/About">About</Link>
                     <Link className={styles.link} to="/buy">Explore</Link>
                     <button className={styles.bt}>Sell</button>
                     {showFull ? (
