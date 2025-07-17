@@ -1,34 +1,72 @@
 import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
+import { FaSquareGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+
 
 const  Footer = () => {
-
-    const currentYear = new Date().getFullYear();
 
     return (
         <footer>
             <div className={styles.footer}>
-                <div></div>
+                <div className={styles.cont}>
+                    <h2 className={styles.logo}>
+                        <span  className={styles.logoL}>
+                            L
+                        </span>
+                        LANGAVI
+                    </h2>
+                    <p>FrontEnd Dev | React. <br />
+                    Open for Full-Time Opportunities <br />
+                    & Freelance Roles:
+                    <div className={styles.icons}>
+                        <Link className={styles.icon1} to=""><FaSquareGithub /></Link>
+                        <Link className={styles.icon2} to=""><FaLinkedin /></Link>
+                    </div>
+                    </p>
+                </div>
                 <div className={styles.cont}>
                     <div className={styles.top}>
                         <h3>CONTACT</h3>
                     </div>
-                    <div>
-                        
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>GitHub</Link></p>
+                        <p><Link className={styles.links} to=''>LinkedIn</Link></p>
+                        <p><Link className={styles.links} to=''>Email</Link></p>
+                        <p><Link className={styles.links} to=''>Phone</Link></p>
                     </div>
                 </div>
                 <div className={styles.cont}>
                     <div className={styles.top}>
                         <h3>HELP</h3>
                     </div>
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>Customer Support</Link></p>
+                        <p><Link className={styles.links} to=''>Delivery Details</Link></p>
+                        <p><Link className={styles.links} to=''>Terms & Conditions</Link></p>
+                        <p><Link className={styles.links} to=''>Policy & Privacy</Link></p>
+                    </div>
                 </div>
                 <div className={styles.cont}>
                     <div className={styles.top}>
                         <h3>CAREER</h3>
                     </div>
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>Resume</Link></p>
+                        <p><Link className={styles.links} to=''>Portfolio</Link></p>
+                        <p><Link className={styles.links} to=''>Certified Responsive Web Design</Link></p>
+                        <p><Link className={styles.links} to=''>Certified Algorithms in JavaScript</Link></p>
+                    </div>
                 </div>
                 <div className={styles.cont}>
                     <div className={styles.top}>
                         <h3>RESOURCES</h3>
+                    </div>
+                    <div className={styles.info}>
+                        <p>HTML / CSS</p>
+                        <p>React</p>
+                        <p>FireBase</p>
+                        <p>Git</p>
                     </div>
                 </div>
             </div>

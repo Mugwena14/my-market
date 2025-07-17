@@ -24,16 +24,16 @@ const About = () => {
                         </h4>
                     </div>
                     <h2>About this MarketPlace:</h2>
-                    <p>
-                        Welcome to your go-to free marketplace demo - a 
-                        platform designed to simplify buying and selling
-                        between everyday users.
-                        Catch the creator behind this build:
+                        <p>
+                            Welcome to your go-to free marketplace demo - a 
+                            platform designed to simplify buying and selling
+                            between everyday users.
+                            Catch the creator behind this build:
+                        </p>
                         <div className={styles.icons}>
                             <Link className={styles.icon1} to=""><FaSquareGithub /></Link>
                             <Link className={styles.icon2} to=""><FaLinkedin /></Link>
                         </div>
-                    </p>
                 </div>
                 <div className={styles.contRight}>
                     {showMore ? (
