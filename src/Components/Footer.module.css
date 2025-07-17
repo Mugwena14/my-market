@@ -78,3 +78,15 @@
     transition: ease-in-out;
 }
 
+@media(max-width: 760px){
+    .cont:nth-child(3), .cont:nth-child(4){
+        display: none;
+    }.cont p{
+        font-size: 10px;
+    }.footer, .icons{
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
