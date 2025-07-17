@@ -4,11 +4,12 @@
     flex-direction: row;
     gap: 20px;
     padding: 120px;
+    background-color: hsl(187, 30%, 95%);
 }
 
-.aboutCont{
+/* .aboutCont{
     animation-name: slide;
-    animation-duration: 10s;
+    animation-duration: 8s;
     animation-iteration-count: infinite;
     animation-delay: 1s;
     animation-fill-mode: forwards;
@@ -16,6 +17,15 @@
     animation-direction: alternate;
     animation-timing-function: linear;
 }
+
+@keyframes slide{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: hsl(187, 52%, 80%);
+    }
+} */
 
 .aboutUs{
     margin-bottom: -20px;

@@ -16,6 +16,7 @@ const About = () => {
                         platform designed to simplify buying and selling
                         between everyday users.
                         Catch the creator behind this build:
+                        <div></div>
                     </p>
                 </div>
                 <div className={styles.contRight}>
