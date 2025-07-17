@@ -82,7 +82,7 @@
     .cont:nth-child(3), .cont:nth-child(4){
         display: none;
     }.cont p{
-        font-size: 10px;
+        font-size: 14px;
     }.footer, .icons{
         justify-content: center;
         text-align: center;
