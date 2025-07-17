@@ -41,7 +41,7 @@
 h2{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 30%);
 }
 
 .contLeft{
@@ -55,21 +55,73 @@ h2{
 .contLeft p{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 380;
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 30%);
     font-size: 16px;
 }
 
 .contRight p{
     font-weight: 380;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: hsl(0, 0%, 20%);
+    color: hsl(0, 0%, 30%);
     font-size: 16px;
+}
+
+.icons{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.icon1{
+    font-size: 18px;
+    color: black;
+}
+
+.icon2{
+    font-size: 18px;
+    color: #0077B5;
+}
+
+.icon1:hover , .icon2:hover{
+    transform: scale(1.3);
 }
 
 @media(max-width: 760px){
     .aboutCont{
         flex-direction: column;
-    }.contRight{
+        padding: 30px;
+    }h2{
+        text-align: center;
+    }
+    .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contRight{
         margin-top: -40px;
+    }.aboutUs{
+        display: none;
     }
 }
+
+.btn{
+    background-color: transparent;
+    border: none;
+    color: #0077B5;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.btn:hover{
+    color: #0077B5;
+    transform: scale(1.1);
+    background-color: transparent;
+}
+
+.toggle{
+    font-size: 18px;
+    position: relative;
+    bottom: -4.2px;
+}
+
