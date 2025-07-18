@@ -19,7 +19,7 @@ const Explore = () => {
                     <div className={styles.info}>
                         <h4 className={styles.productHead}>
                         <span className={styles.product}>
-                            iPhone 16
+                            iPhone 16 
                         </span>
                         </h4>
                         <p className={styles.nameHead}>
