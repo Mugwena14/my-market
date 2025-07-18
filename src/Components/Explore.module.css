@@ -18,9 +18,50 @@
 }
 
 .featureCont{
-    border: 1px solid black;
+    border: 2px solid black;
+    border-radius: 15px;
 }
 
 .image img{
-    width: 180px;
+    width: 190px;
+    border-radius: 14px 14px 0 0 ;
+}
+
+.info{
+    margin-top: -20px;
+    margin-bottom: -16px;
+    background-color: yellow;
+    padding: 0 5px;
+    border-radius: 0 0 14px 14px;
+}
+
+.profile{
+    background-color: rgb(97, 94, 94);
+    border-radius: 50%;
+    padding: 3px 3px;
+    color: white;
+    margin-right: 3px;
+    font-size: 10px;
+}
+
+.nameHead{
+    margin-top: -18px;
+}
+
+.name{
+    font-size: 12px;
+    padding-top: 10px;
+}
+
+.priceHead{
+    margin-top: 6px;
+    margin-left: 2px;
+}
+
+.price{
+    font-size: 15px;
+}
+
+.locationHead{
+    margin-top: -15px;
 }
