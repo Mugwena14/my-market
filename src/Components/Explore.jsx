@@ -35,7 +35,175 @@ const Explore = () => {
                             </span>
                             </p>
                         </p>
-                        <p className={styles.locationHead}><CiLocationOn />
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
+                        <span className={styles.location}>
+                            Location
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.featureCont}>
+                    <div className={styles.image}>
+                        <img src={snd} alt="" />
+                    </div>
+                    <div className={styles.info}>
+                        <h4 className={styles.productHead}>
+                        <span className={styles.product}>
+                            iPhone 16
+                        </span>
+                        </h4>
+                        <p className={styles.nameHead}>
+                            <span className={styles.profile}>
+                                <CiUser />
+                            </span>
+                        <span className={styles.name}>
+                            Langavi
+                        </span>
+                        <p className={styles.priceHead}> 
+                            <span className={styles.price}>
+                                R17 000
+                            </span>
+                            </p>
+                        </p>
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
+                        <span className={styles.location}>
+                            Location
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.featureCont}>
+                    <div className={styles.image}>
+                        <img src={snd} alt="" />
+                    </div>
+                    <div className={styles.info}>
+                        <h4 className={styles.productHead}>
+                        <span className={styles.product}>
+                            iPhone 16
+                        </span>
+                        </h4>
+                        <p className={styles.nameHead}>
+                            <span className={styles.profile}>
+                                <CiUser />
+                            </span>
+                        <span className={styles.name}>
+                            Langavi
+                        </span>
+                        <p className={styles.priceHead}> 
+                            <span className={styles.price}>
+                                R17 000
+                            </span>
+                            </p>
+                        </p>
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
+                        <span className={styles.location}>
+                            Location
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.featureCont}>
+                    <div className={styles.image}>
+                        <img src={snd} alt="" />
+                    </div>
+                    <div className={styles.info}>
+                        <h4 className={styles.productHead}>
+                        <span className={styles.product}>
+                            iPhone 16
+                        </span>
+                        </h4>
+                        <p className={styles.nameHead}>
+                            <span className={styles.profile}>
+                                <CiUser />
+                            </span>
+                        <span className={styles.name}>
+                            Langavi
+                        </span>
+                        <p className={styles.priceHead}> 
+                            <span className={styles.price}>
+                                R17 000
+                            </span>
+                            </p>
+                        </p>
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
+                        <span className={styles.location}>
+                            Location
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.featureCont}>
+                    <div className={styles.image}>
+                        <img src={snd} alt="" />
+                    </div>
+                    <div className={styles.info}>
+                        <h4 className={styles.productHead}>
+                        <span className={styles.product}>
+                            iPhone 16
+                        </span>
+                        </h4>
+                        <p className={styles.nameHead}>
+                            <span className={styles.profile}>
+                                <CiUser />
+                            </span>
+                        <span className={styles.name}>
+                            Langavi
+                        </span>
+                        <p className={styles.priceHead}> 
+                            <span className={styles.price}>
+                                R17 000
+                            </span>
+                            </p>
+                        </p>
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
+                        <span className={styles.location}>
+                            Location
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div className={styles.featureCont}>
+                    <div className={styles.image}>
+                        <img src={snd} alt="" />
+                    </div>
+                    <div className={styles.info}>
+                        <h4 className={styles.productHead}>
+                        <span className={styles.product}>
+                            iPhone 16
+                        </span>
+                        </h4>
+                        <p className={styles.nameHead}>
+                            <span className={styles.profile}>
+                                <CiUser />
+                            </span>
+                        <span className={styles.name}>
+                            Langavi
+                        </span>
+                        <p className={styles.priceHead}> 
+                            <span className={styles.price}>
+                                R17 000
+                            </span>
+                            </p>
+                        </p>
+                        <p className={styles.locationHead}>
+                            <span className={styles.profileLocation}>
+                                <CiLocationOn />
+                            </span>
                         <span className={styles.location}>
                             Location
                         </span>

@@ -18,19 +18,21 @@
 }
 
 .featureCont{
-    border: 2px solid black;
+    border: 1px solid hsl(0, 0%, 80%);
     border-radius: 15px;
+    box-shadow: 5px 5px 5px hsl(0, 0%, 0%, 0.2);
 }
 
 .image img{
     width: 190px;
     border-radius: 14px 14px 0 0 ;
+    border-bottom: 1px solid hsl(0, 0%, 70%);
+
 }
 
 .info{
     margin-top: -20px;
     margin-bottom: -16px;
-    background-color: yellow;
     padding: 0 5px;
     border-radius: 0 0 14px 14px;
 }
@@ -49,7 +51,7 @@
 }
 
 .name{
-    font-size: 12px;
+    font-size: 11.5px;
     padding-top: 10px;
 }
 
@@ -64,4 +66,20 @@
 
 .locationHead{
     margin-top: -15px;
+    color: green;
+}
+
+.location{
+    font-size: 11.5px;
+    position: relative;
+    top: -2px;
+}
+
+.profileLocation{
+    font-size: 13px;
+    margin-right: 2px;
+}
+
+.main{
+    border-bottom: 1px solid hsl(0, 0%, 50%);
 }
