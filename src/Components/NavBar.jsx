@@ -7,7 +7,6 @@ import { useState } from 'react';
 const NavBar = () => {
 
     const [showFull, setShowFull] = useState(false);
-    const [hide, setHide] = useState(false);
 
     function showSideBar(){
         setShowFull(prevState => !prevState);
@@ -22,7 +21,7 @@ const NavBar = () => {
                 <div className={styles.links}>
                     <Link className={styles.link} to="/Index">Home</Link>
                     <Link className={styles.link} to="/About">About</Link>
-                    <Link className={styles.link} to="/Buy">Explore</Link>
+                    <Link className={styles.link} to="/Explore">Explore</Link>
                     <button className={styles.bt}>Sell</button>
                     {showFull ? (
                         <>
