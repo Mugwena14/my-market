@@ -1,0 +1,26 @@
+.main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 40px 100px;
+    gap: 10px;
+    justify-content: center;
+}
+
+.featureCont{
+    border: 1px solid black;
+}
+
+.image img{
+    width: 180px;
+}
