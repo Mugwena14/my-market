@@ -1,9 +1,11 @@
-import React from 'react'
+import styles from './Explore.module.css'
 
 const Explore = () => {
     return (
         <div>
-            Explore
+            <div className={styles.top}>
+                <h2>Browse Products</h2>
+            </div>
         </div>
     )
 }
