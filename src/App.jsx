@@ -3,6 +3,7 @@ import MainLayout from "./Layouts/MainLayout"
 import HomePage from "./Pages/HomePage"
 import AboutPage from "./Pages/AboutPage"
 import ExplorePage from './Pages/ExplorePage'
+import ViewPage from './Pages/ViewPage'
 
 const App = () => {
     
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/Index" element={<HomePage/>}></Route>
           <Route path="/About" element={<AboutPage/>}></Route>
           <Route path="/Explore" element={<ExplorePage/>}></Route>
+          <Route path="/View" element={<ViewPage/>}></Route>
         </Route>
       )
     )

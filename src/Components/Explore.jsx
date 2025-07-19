@@ -47,7 +47,7 @@ const Explore = () => {
                                 </p>
                             </div>
                             <div className={styles.downRight}>
-                                <button>View</button>
+                                <a href='/View'><button>View</button></a>
                             </div>
                         </div>
                     </div>
