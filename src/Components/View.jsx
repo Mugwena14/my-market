@@ -11,12 +11,13 @@ import { IoChatboxOutline } from "react-icons/io5";
 
 const View = () => {
     return (
-        <div className={styles.cont}>
+        <div>
+            <p>
+                <span><IoArrowBackOutline /></span>
+                Go back
+            </p>
+            <div className={styles.cont}>
             <div className={styles.box1}>
-                <p>
-                    <span><IoArrowBackOutline /></span>
-                    Go back
-                </p>
                 <img src={snd} alt="" />
             </div>
             <div className={styles.box2}>
@@ -24,10 +25,10 @@ const View = () => {
                 <h1>Apple iPhone 16</h1>
                 <h2>R17 000</h2>
                     <p><span className={styles.available}>
-                            <span>
+                            <span className={styles.note}>
                                 <AiOutlineExclamationCircle />
                             </span>
-                            <span>
+                            <span className={styles.noteParagraph}>
                                 I'm available during morning hours
                             </span>
                         </span>
@@ -99,6 +100,7 @@ const View = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
