@@ -24,15 +24,7 @@ const View = () => {
                 <p><span className={styles.name}>Langavi</span></p>
                 <h1>Apple iPhone 16</h1>
                 <h2>R17 000</h2>
-                    <p><span className={styles.available}>
-                            <span className={styles.note}>
-                                <AiOutlineExclamationCircle />
-                            </span>
-                            <span className={styles.noteParagraph}>
-                                I'm available during morning hours
-                            </span>
-                        </span>
-                    </p>
+                    
                 <div className={styles.description}>
                     <div className={styles.desHead}>
                         <h3>Product Description</h3>
@@ -42,6 +34,14 @@ const View = () => {
                     </div>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est iste laborum, impedit consectetur quos blanditiis, iure voluptatum facere ea deleniti tempora, ratione sed modi. Veritatis nemo veniam vitae animi!</p>
                 </div>
+                <p className={styles.available}>
+                            <span className={styles.note}>
+                                <AiOutlineExclamationCircle />
+                            </span>
+                            <span className={styles.noteParagraph}>
+                                I'm available during morning hours
+                            </span>
+                    </p>
                 <div className={styles.contact}>
                     <div className={styles.contHead}>
                         <h3>Hit me up:</h3>
@@ -82,7 +82,7 @@ const View = () => {
                                     </span>
                                 </div>
                                 <div className={styles.info}>
-                                    <p className={styles.contactUp}>whatsaap</p>
+                                    <p className={styles.contactUp}>Whatsaap</p>
                                     <p className={styles.contactBelow}>068 502 1117</p>
                                 </div>
                             </div>
@@ -92,8 +92,8 @@ const View = () => {
                                         <IoChatboxOutline />
                                     </span>
                                 </div>
-                                <div className={styles.info}>
-                                    <Link to=''>Let's Chat</Link>
+                                <div className={styles.chat}>
+                                    <a href=''>Let's Chat</a>
                                 </div> 
                             </div>
                         </div>
