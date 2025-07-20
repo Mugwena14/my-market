@@ -8,8 +8,23 @@ import { IoCallSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoChatboxOutline } from "react-icons/io5";
+import { useState } from 'react';
+import { MdExpandLess } from "react-icons/md";
+
 
 const View = () => {
+
+    const [show, setShow] = useState(true);
+    const [showFull, setShowFull] = useState(true);
+
+    function handleClick(){
+        setShow(prevState => !prevState)
+    }
+
+    function handleClick2(){
+        setShowFull(prevState => !prevState)
+    }
+
     return (
         <div>
             <p>
@@ -28,11 +43,18 @@ const View = () => {
                 <div className={styles.description}>
                     <div className={styles.desHead}>
                         <h3>Product Description</h3>
-                        <span className={styles.down}>
-                            <FaChevronDown />
+                        <span className={styles.down} onClick={() => handleClick()}>
+                            {show ? (
+                                <MdExpandLess />
+                            ) : (
+                                <FaChevronDown />
+                            )}
                         </span>
                     </div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est iste laborum, impedit consectetur quos blanditiis, iure voluptatum facere ea deleniti tempora, ratione sed modi. Veritatis nemo veniam vitae animi!</p>
+                    {show ? (
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est iste laborum, impedit consectetur quos blanditiis, iure voluptatum facere ea deleniti tempora, ratione sed modi. Veritatis nemo veniam vitae animi!</p>
+
+                    ) : ('')}
                 </div>
                 <p className={styles.available}>
                             <span className={styles.note}>
@@ -45,59 +67,65 @@ const View = () => {
                 <div className={styles.contact}>
                     <div className={styles.contHead}>
                         <h3>Hit me up:</h3>
-                        <span className={styles.down}>
+                        <span className={styles.down} onClick={() => handleClick2()}>
+                            {showFull ? (
+                                <MdExpandLess />
+                            ) : (
                             <FaChevronDown />
+                            )}
                         </span>
                     </div>
-                    <div className={styles.contacts}>
-                        <div className={styles.left}>
-                            <div className={styles.social}>
-                                <div className={styles.icon}>
-                                    <span className={styles.icons}>
-                                        <IoCallSharp />
-                                    </span>
+                    {showFull ? (
+                        <div className={styles.contacts}>
+                            <div className={styles.left}>
+                                <div className={styles.social}>
+                                    <div className={styles.icon}>
+                                        <span className={styles.icons}>
+                                            <IoCallSharp />
+                                        </span>
+                                    </div>
+                                    <div className={styles.info}>
+                                        <p className={styles.contactUp}>Calls</p>
+                                        <p className={styles.contactBelow}>068 502 1117</p>
+                                    </div>
                                 </div>
-                                <div className={styles.info}>
-                                    <p className={styles.contactUp}>Calls</p>
-                                    <p className={styles.contactBelow}>068 502 1117</p>
+                                <div className={styles.social}>
+                                    <div className={styles.icon}>
+                                        <span className={styles.icons}>
+                                            <MdEmail />
+                                        </span>
+                                    </div>
+                                    <div className={styles.info}>
+                                        <p className={styles.contactUp}>Email</p>
+                                        <p className={styles.contactBelow}>mlangaviclyde@gmail.com</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div className={styles.social}>
-                                <div className={styles.icon}>
-                                    <span className={styles.icons}>
-                                        <MdEmail />
-                                    </span>
+                            <div className={styles.right}>
+                                <div className={styles.social}>
+                                    <div className={styles.icon}>
+                                        <span className={styles.icons}>
+                                            <FaWhatsapp />
+                                        </span>
+                                    </div>
+                                    <div className={styles.info}>
+                                        <p className={styles.contactUp}>Whatsaap</p>
+                                        <p className={styles.contactBelow}>068 502 1117</p>
+                                    </div>
                                 </div>
-                                <div className={styles.info}>
-                                    <p className={styles.contactUp}>Email</p>
-                                    <p className={styles.contactBelow}>mlangaviclyde@gmail.com</p>
+                                <div className={styles.social}>
+                                    <div className={styles.icon}>
+                                        <span className={styles.icons}>
+                                            <IoChatboxOutline />
+                                        </span>
+                                    </div>
+                                    <div className={styles.chat}>
+                                        <a href=''>Let's Chat</a>
+                                    </div> 
                                 </div>
                             </div>
                         </div>
-                        <div className={styles.right}>
-                            <div className={styles.social}>
-                                <div className={styles.icon}>
-                                    <span className={styles.icons}>
-                                        <FaWhatsapp />
-                                    </span>
-                                </div>
-                                <div className={styles.info}>
-                                    <p className={styles.contactUp}>Whatsaap</p>
-                                    <p className={styles.contactBelow}>068 502 1117</p>
-                                </div>
-                            </div>
-                            <div className={styles.social}>
-                                <div className={styles.icon}>
-                                    <span className={styles.icons}>
-                                        <IoChatboxOutline />
-                                    </span>
-                                </div>
-                                <div className={styles.chat}>
-                                    <a href=''>Let's Chat</a>
-                                </div> 
-                            </div>
-                        </div>
-                    </div>
+                    ) : ('')}
                 </div>
             </div>
         </div>
