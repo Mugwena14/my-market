@@ -8,7 +8,7 @@
 }
 
 .name{
-    border: 1px solid hsl(0, 0%, 30%);
+    border: 1px solid hsl(0, 0%, 70%);
     padding: 0 8px;
     border-radius: 10px;
     font-size: 11px;
@@ -36,8 +36,9 @@
 }
 
 .desHead h3{
-    font-weight: 550;
+    font-weight: 350;
     font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 15%);
 
 }
@@ -129,6 +130,9 @@
     width: 400px;
     border: 1px solid hsl(0, 0%, 100%);
     border-radius: 20px;
+    border: 1px solid hsl(0, 0%, 70%);
+    position: relative;
+    top: 20px;
 }
 
 h1{
@@ -160,6 +164,7 @@ p{
 
 .noteParagraph{
     font-size: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     position: relative;
     top: -1px;
 }
