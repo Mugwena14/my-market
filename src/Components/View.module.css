@@ -8,11 +8,12 @@
 }
 
 .name{
-    border: 1px solid hsl(0, 0%, 70%);
+    border: 1px solid hsl(0, 0%, 30%);
     padding: 0 8px;
     border-radius: 10px;
-    font-size: 12px;
-    color: hsl(0, 0%, 25%);
+    font-size: 11px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: hsl(0, 0%, 10%);
 }
 
 .available{
@@ -42,7 +43,8 @@
 }
 
 .description p{
-    font-size: 14px;
+    font-size: 13px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 15%);
 }
 
@@ -62,10 +64,10 @@
 }
 
 .contHead h3{
-    font-weight: 400;
     font-size: 15px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: hsl(0, 0%, 15%);
-    font-weight: 550;
+    font-weight: 350;
 }
 
 .contacts{
@@ -95,7 +97,7 @@
 .icons{
     font-size: 15px;
     border-radius: 50%;
-    border: 1px solid hsl(0, 0%, 50%);
+    border: 1px solid hsl(0, 0%, 85%);
     color: hsl(0, 0%, 10%);
     padding: 5px;
     padding-top: 10px;
@@ -106,7 +108,9 @@
 
 .contactBelow{
     margin-top: -10px;
-    font-size: 13px;
+    font-size: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 499;
 }
 
 .contactUp{
@@ -128,19 +132,19 @@
 }
 
 h1{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 350;
     margin-top: -10px;
-    font-size: 25px;
-    color: hsl(0, 0%, 20%);
+    font-size: 20px;
+    color: hsl(0, 0%, 30%);
 }
 
 h2{
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    margin-top: -13px;
-    font-size: 16px;
-    color: hsl(0, 0%, 20%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    margin-top: -10px;
+    font-size: 14px;
+    color: hsl(0, 0%, 30%);
 }
 
 p{

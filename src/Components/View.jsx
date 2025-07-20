@@ -21,7 +21,7 @@ const View = () => {
                 <img src={snd} alt="" />
             </div>
             <div className={styles.box2}>
-                <p><span className={styles.name}>Langavi</span></p>
+                <p><span className={styles.name}>Langavi, Based in Gauteng - Pretoria</span></p>
                 <h1>Apple iPhone 16</h1>
                 <h2>R17 000</h2>
                     
