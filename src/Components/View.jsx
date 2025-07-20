@@ -27,10 +27,14 @@ const View = () => {
 
     return (
         <div>
-            <p>
-                <span><IoArrowBackOutline /></span>
-                Go back
-            </p>
+            <div className={styles.goBack}>
+                <Link to='/Explore' className={styles.back}>
+                    <p>
+                        <span className={styles.backIcon}><IoArrowBackOutline /></span>
+                        Go back
+                    </p>
+                </Link>
+            </div>
             <div className={styles.cont}>
             <div className={styles.box1}>
                 <img src={snd} alt="" />
@@ -45,9 +49,13 @@ const View = () => {
                         <h3>Product Description</h3>
                         <span className={styles.down} onClick={() => handleClick()}>
                             {show ? (
-                                <MdExpandLess />
+                                <span className={styles.expandLess}>
+                                    <MdExpandLess />
+                                </span>
                             ) : (
-                                <FaChevronDown />
+                                <span className={styles.expandMore}>
+                                    <FaChevronDown />
+                                </span>
                             )}
                         </span>
                     </div>
@@ -69,9 +77,13 @@ const View = () => {
                         <h3>Hit me up:</h3>
                         <span className={styles.down} onClick={() => handleClick2()}>
                             {showFull ? (
-                                <MdExpandLess />
+                                <span className={styles.expandLess}>
+                                    <MdExpandLess />
+                                </span>
                             ) : (
-                            <FaChevronDown />
+                                <span className={styles.expandMore}>
+                                    <FaChevronDown />
+                                </span>
                             )}
                         </span>
                     </div>
@@ -81,7 +93,7 @@ const View = () => {
                                 <div className={styles.social}>
                                     <div className={styles.icon}>
                                         <span className={styles.icons}>
-                                            <IoCallSharp />
+                                            <IoCallSharp  className={styles.ico}/>
                                         </span>
                                     </div>
                                     <div className={styles.info}>
