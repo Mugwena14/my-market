@@ -130,9 +130,7 @@
     align-items: center;
 }
 
-.box2{
-    padding: 0 400px;
-}
+
 
 .box1 img{
     justify-content: center;
