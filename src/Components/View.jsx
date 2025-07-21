@@ -10,6 +10,8 @@ import { MdEmail } from "react-icons/md";
 import { IoChatboxOutline } from "react-icons/io5";
 import { useState } from 'react';
 import { MdExpandLess } from "react-icons/md";
+import image from '../assets/images/playStation.jpeg'
+
 
 
 const View = () => {
@@ -26,7 +28,7 @@ const View = () => {
     }
 
     return (
-        <div>
+        <div className={styles.view}>
             <div className={styles.goBack}>
                 <Link to='/Explore' className={styles.back}>
                     <p>
@@ -36,9 +38,9 @@ const View = () => {
                 </Link>
             </div>
             <div className={styles.cont}>
-            <div className={styles.box1}>
-                <img src={snd} alt="" />
-            </div>
+                <div className={styles.box1}>
+                    <img src={image} alt="" />
+                </div>
             <div className={styles.box2}>
                 <p><span className={styles.name}>Langavi, Based in Gauteng - Pretoria</span></p>
                 <h1>Apple iPhone 16</h1>

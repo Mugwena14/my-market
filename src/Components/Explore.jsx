@@ -14,6 +14,7 @@ const Explore = () => {
                     <div className={styles.info}>
                         <h3>Play Station 6</h3>
                         <p>By Langavi</p>
+                        <a href="/View">Yes</a>
                     </div>
                 </div>
             </div>
