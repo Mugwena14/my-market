@@ -75,21 +75,7 @@ const View = () => {
                             </span>
                     </p>
                 <div className={styles.contact}>
-                    <div className={styles.contHead}>
-                        <h3>Hit me up:</h3>
-                        <span className={styles.down} onClick={() => handleClick2()}>
-                            {showFull ? (
-                                <span className={styles.expandLess}>
-                                    <MdExpandLess />
-                                </span>
-                            ) : (
-                                <span className={styles.expandMore}>
-                                    <FaChevronDown />
-                                </span>
-                            )}
-                        </span>
-                    </div>
-                    {showFull ? (
+                    
                         <div className={styles.contacts}>
                             <div className={styles.left}>
                                 <div className={styles.social}>
@@ -139,7 +125,6 @@ const View = () => {
                                 </div>
                             </div>
                         </div>
-                    ) : ('')}
                 </div>
             </div>
         </div>
