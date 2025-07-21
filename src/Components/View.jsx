@@ -67,7 +67,7 @@ const View = () => {
                                     <AiOutlineExclamationCircle />
                                 </span>
                                 <span className={styles.noteParagraph}>
-                                    I'm available during morning hours
+                                    I'm available during <span className={styles.time}>morning</span> hours
                                 </span>
                         </p>
                     <div className={styles.contact}>
@@ -77,7 +77,7 @@ const View = () => {
                                     <div className={styles.social}>
                                         <div className={styles.icon}>
                                             <span className={styles.icons}>
-                                                <IoCallSharp  className={styles.ico}/>
+                                                <IoCallSharp  className={styles.calls}/>
                                             </span>
                                         </div>
                                         <div className={styles.info}>
@@ -88,7 +88,7 @@ const View = () => {
                                     <div className={styles.social}>
                                         <div className={styles.icon}>
                                             <span className={styles.icons}>
-                                                <MdEmail />
+                                                <MdEmail  className={styles.email}/>
                                             </span>
                                         </div>
                                         <div className={styles.info}>
@@ -101,23 +101,13 @@ const View = () => {
                                     <div className={styles.social}>
                                         <div className={styles.icon}>
                                             <span className={styles.icons}>
-                                                <FaWhatsapp />
+                                                <FaWhatsapp className={styles.whatsaap} />
                                             </span>
                                         </div>
                                         <div className={styles.info}>
                                             <p className={styles.contactUp}>Whatsaap</p>
                                             <p className={styles.contactBelow}>068 502 1117</p>
                                         </div>
-                                    </div>
-                                    <div className={styles.social}>
-                                        <div className={styles.icon}>
-                                            <span className={styles.icons}>
-                                                <IoChatboxOutline />
-                                            </span>
-                                        </div>
-                                        <div className={styles.chat}>
-                                            <a href=''>Let's Chat</a>
-                                        </div> 
                                     </div>
                                 </div>
                             </div>
