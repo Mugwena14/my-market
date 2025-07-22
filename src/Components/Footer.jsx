@@ -22,7 +22,7 @@ const  Footer = () => {
                         <Link className={styles.icon2} to=""><FaLinkedin /></Link>
                     </div>
                     <div className={styles.important}>
-                        <Link className={styles.terms}>
+                        <Link className={styles.terms} to='/Terms'>
                             <p>Terms & Conditions</p>
                         </Link>
                         <Link className={styles.conditions}>
