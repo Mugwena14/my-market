@@ -25,7 +25,7 @@ const  Footer = () => {
                         <Link className={styles.terms} to='/Terms'>
                             <p>Terms & Conditions</p>
                         </Link>
-                        <Link className={styles.conditions}>
+                        <Link className={styles.conditions} to='/Privacy'>
                             <p>&middot; Privacy Policy</p>
                         </Link>
                         <p>&middot; All Rights Reserved</p>

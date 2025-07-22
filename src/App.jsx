@@ -6,6 +6,7 @@ import ExplorePage from './Pages/ExplorePage'
 import ViewPage from './Pages/ViewPage'
 import AddProducts from "./Pages/AddProduct"
 import TermsPage from "./Pages/TermsPage"
+import PrivacyPage from "./Pages/PrivacyPage"
 
 const App = () => {
     
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/View" element={<ViewPage/>}></Route>
           <Route path="/Sell" element={<AddProducts/>}></Route>
           <Route path="/Terms" element={<TermsPage/>}></Route>
+          <Route path="/Privacy" element={<PrivacyPage/>}></Route>
         </Route>
       )
     )

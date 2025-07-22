@@ -203,7 +203,9 @@ const Terms = () => {
     Contact Us
 </h4>
 
-Questions? Reach out to our team at: <a href="mailto:mugwena.co.za">loopkart.mugwena.co.za</a>
+<p className={styles.questions}>
+    Questions? Reach out to our team at: <a href="mailto:mugwena.co.za">loopkart.mugwena.co.za</a>
+</p>
         </div>
     )
 }
