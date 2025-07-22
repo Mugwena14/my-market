@@ -17,7 +17,6 @@ import image from '../assets/images/playStation.jpeg'
 const View = () => {
 
     const [show, setShow] = useState(true);
-    const [showFull, setShowFull] = useState(true);
 
     function handleClick(){
         setShow(prevState => !prevState)

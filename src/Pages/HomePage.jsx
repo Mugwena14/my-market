@@ -6,7 +6,6 @@ const HomePage = () => {
     return (
         <div>
             <Hero></Hero>
-            <Card></Card>
         </div>
     )
 }

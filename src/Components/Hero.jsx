@@ -3,10 +3,13 @@ import snd from '../assets/images/iPhone-16-Plus.png'
 import { CiLocationOn } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { CiDollar } from "react-icons/ci";
+import About from './About';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
-        <div className={styles.main}>
+        <>
+            <div className={styles.main}>
             <div className={styles.hero}>
                 <div className={styles.left}>
                     <h2>Discover &</h2>
@@ -16,8 +19,12 @@ const Hero = () => {
                     <span> FREE OF CHARGE.</span>
                     </p>
                     <div className={styles.buttons}>
-                    <button className={styles.btn}>Explore</button>
-                    <button className={styles.btn}>Sell</button>
+                        <Link to='/Explore'>
+                            <button className={styles.btn}>Explore</button>
+                        </Link>
+                        <Link to='/Sell'>
+                            <button className={styles.btn}>Sell</button>
+                        </Link>
                     </div>
                 </div>
                 <div className={styles.right}>
@@ -61,7 +68,9 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+            <About/>
+        </>
     )
 }
 
