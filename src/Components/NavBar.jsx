@@ -40,10 +40,10 @@ const NavBar = () => {
                             <div className={styles.side}>
                                 <div className={styles.col}>
                                     <div className={styles.sideLink}>
-                                        <Link className={styles.sideLinks} to="/index">Home</Link>
-                                        <Link className={styles.sideLinks} to="/About">About</Link>
-                                        <Link className={styles.sideLinks} to="/Explore">Explore</Link>
-                                        <Link className={styles.sideLinks} to="/Sell">Sell</Link>
+                                        <Link onClick={() => showSideBar()} className={styles.sideLinks} to="/index">Home</Link>
+                                        <Link onClick={() => showSideBar()} className={styles.sideLinks} to="/About">About</Link>
+                                        <Link onClick={() => showSideBar()} className={styles.sideLinks} to="/Explore">Explore</Link>
+                                        <Link onClick={() => showSideBar(false)} className={styles.sideLinks} to="/Sell">Sell</Link>
                                     </div>
                                 </div>
                             </div>
