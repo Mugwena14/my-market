@@ -1,9 +1,20 @@
 import styles from './AddProduct.module.css'
+import { Link } from 'react-router-dom'
+import { IoArrowBackOutline } from "react-icons/io5";
+
 
 const AddProducts = () => {
     return (
         <div className={styles.cont}>
             <section>
+                <div className={styles.goBack}>
+                    <Link to='/Index' className={styles.back}>
+                        <p>
+                            <span className={styles.backIcon}><IoArrowBackOutline /></span>
+                            Home
+                        </p>
+                    </Link>
+                </div>
             <form onSubmit=''>
                 <h2>Add Product</h2>
                                 <label htmlFor="product">Product Name:</label><br />
