@@ -3,7 +3,7 @@
 section{
     margin: 20px 0;
     margin-bottom: 50px;
-    height: 130vh;
+    height: 150vh;
     background-color: hsl(187, 30%, 95%);
 }
 
@@ -85,7 +85,7 @@ h2{
     form{
         margin: 20px;
     }section{
-        height: 103vh;
+        height: 150vh;
     }
 }
 
