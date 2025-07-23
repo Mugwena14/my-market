@@ -8,19 +8,36 @@ import { IoCallSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { IoChatboxOutline } from "react-icons/io5";
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MdExpandLess } from "react-icons/md";
 import image from '../assets/images/playStation.jpeg'
-
+import { useParams } from 'react-router-dom';
 
 
 const View = () => {
 
-    const [show, setShow] = useState(true);
+    const [show, setShow] = useState(false);
+    const [product, setProduct] = useState([]);
+
+    const { id } = useParams();
 
     function handleClick(){
         setShow(prevState => !prevState)
     }
+
+    useEffect(() => {
+        async function fetchProduct(){
+            try{
+                const res = await fetch(`http://localhost:3001/posts/${id}`);
+                const data = await res.json();
+                setProduct(data);
+            }catch{
+                console.error('Could not find Product', error)
+            }
+        }
+        fetchProduct();
+    }, [])
+
 
     return (
         <div className={styles.view}>
@@ -34,12 +51,15 @@ const View = () => {
             </div>
             <div className={styles.cont}>
                 <div className={styles.box1}>
-                    <img src={image} alt="" />
+                    <img src={product.productImage} alt="IMG" />
                 </div>
                 <div className={styles.box2}>
-                    <p><span className={styles.name}>Langavi, Based in Gauteng - Pretoria</span></p>
-                    <h1>Apple iPhone 16</h1>
-                    <h2 className={styles.price}>R17 000</h2>
+                    <p><span className={styles.name}>
+                        {product.name}, Based in {product.location}
+                        </span>
+                    </p>
+                    <h1>{product.productName}</h1>
+                    <h2 className={styles.price}>{product.productPrice}</h2>
                         
                     <div className={styles.description}>
                         <div className={styles.desHead}>
@@ -57,8 +77,8 @@ const View = () => {
                             </span>
                         </div>
                         {show ? (
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam est iste laborum, impedit consectetur quos blanditiis, iure voluptatum facere ea deleniti tempora, ratione sed modi. Veritatis nemo veniam vitae animi!</p>
 
+                            <p>{product.productDescription}.</p>
                         ) : ('')}
                     </div>
                     <p className={styles.available}>
@@ -66,7 +86,7 @@ const View = () => {
                                     <AiOutlineExclamationCircle />
                                 </span>
                                 <span className={styles.noteParagraph}>
-                                    I'm available during <span className={styles.time}>morning</span> hours
+                                    I'm available during <span className={styles.time}>{product.availability}.</span>
                                 </span>
                         </p>
                     <div className={styles.contact}>
@@ -81,7 +101,7 @@ const View = () => {
                                         </div>
                                         <div className={styles.info}>
                                             <p className={styles.contactUp}>Calls</p>
-                                            <p className={styles.contactBelow}>068 502 1117</p>
+                                            <p className={styles.contactBelow}>{product.phoneNo}</p>
                                         </div>
                                     </div>
                                     <div className={styles.social}>
@@ -92,7 +112,7 @@ const View = () => {
                                         </div>
                                         <div className={styles.info}>
                                             <p className={styles.contactUp}>Email</p>
-                                            <p className={styles.contactBelow}>mlangaviclyde@gmail.com</p>
+                                            <p className={styles.contactBelow}>{product.email}</p>
                                         </div>
                                     </div>
                                 </div>
@@ -105,7 +125,7 @@ const View = () => {
                                         </div>
                                         <div className={styles.info}>
                                             <p className={styles.contactUp}>Whatsaap</p>
-                                            <p className={styles.contactBelow}>068 502 1117</p>
+                                            <p className={styles.contactBelow}>{product.whatsaapNo}</p>
                                         </div>
                                     </div>
                                 </div>
