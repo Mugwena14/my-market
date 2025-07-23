@@ -23,7 +23,7 @@ const About = () => {
                             About Us
                         </h4>
                     </div>
-                    <h2>About this MarketPlace:</h2>
+                    <h2 className={styles.abtM}>About this MarketPlace:</h2>
                         <p>
                             Welcome to your go-to free marketplace demo - a 
                             platform designed to simplify buying and selling
@@ -77,22 +77,26 @@ const About = () => {
                         </>
                     )}
                     
-                <button onClick={() => onHandle()} className={styles.btn}>{showMore ? 
+                    <button onClick={() => onHandle()} className={styles.btn}>{showMore ? 
                     <> 
-                        <span className={styles.show}>
-                            More
-                        </span>
-                        <span className={styles.toggle}>
-                        <MdExpandMore />
-                        </span>
+                        <div className={styles.tgl1}>
+                            <span className={styles.show}>
+                                More
+                            </span>
+                            <span className={styles.toggle}>
+                            <MdExpandMore />
+                            </span>
+                        </div>
                     </> : 
                     <> 
-                        <span className={styles.show}>
-                            Less
-                        </span>
-                        <span className={styles.toggle}>
-                        <MdExpandLess />
-                        </span>
+                        <div className={styles.tgl2}>
+                            <span className={styles.show}>
+                                Less
+                            </span>
+                            <span className={styles.toggle}>
+                            <MdExpandLess />
+                            </span>
+                        </div>
                     </>
                     }</button>
                 </div>

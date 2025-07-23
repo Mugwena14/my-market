@@ -3,6 +3,7 @@
     flex-direction: row;
     padding: 30px;
     margin-top: 25px;
+    margin-bottom: 65px;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -47,6 +48,8 @@
     font-family: 'Inter', 'Helvetica' ;
     margin: 8px auto;
     font-size: 3rem;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .left p{
@@ -70,7 +73,7 @@
 
 .first{
     border: 2px solid hsl(0, 0%, 20%);
-    height: 307px;
+    height: 315px;
     width: 220px;
     border-radius: 12px;
     position: relative;
@@ -82,7 +85,7 @@
 
 .second{
     border: 2px solid hsl(0, 0%, 20%);
-    height: 307px;
+    height: 315px;
     border-radius: 12px;
     position: relative;
     left: -60px;
@@ -95,6 +98,8 @@
     background-color: hsl(0, 0%, 7%);
     border-radius: 0px 0px 9px 9px;
     padding: 0 8px;
+    height: 83px;
+    padding-bottom: 10px;
 }
 
 .info p{
@@ -108,6 +113,7 @@
 .bottom{
     display: flex;
     flex-direction: row;
+    gap: 110px;
     justify-content: space-between;
 }
 
