@@ -1,15 +1,30 @@
 {
-    "posts": [
-        { "id": "1", 
-        "productName": "Play Station 6", 
-        "productPrice": "R11 000",
-        "productImage": "src/assets/images/playStation.jpeg",
-        "productDescription": "2024 PlayStation 5, a console, 2 controllers and 1 FC 24 game",
-        "name": "Langavi",
-        "location": "Guateng - Pretoria",
-        "availability": "Afternoons",
-        "phoneNo": "555-555-5555",
-        "whatsaapNo": "555-555-5555",
-        "email": "example.gmail.com"}
-    ]
+  "posts": [
+    {
+      "id": "1",
+      "productName": "Play Station 6",
+      "productPrice": "R11 000",
+      "productImage": "src/assets/images/playStation.jpeg",
+      "productDescription": "2024 PlayStation 5, a console, 2 controllers and 1 FC 24 game",
+      "name": "Langavi",
+      "location": "Guateng - Pretoria",
+      "availability": "Afternoons",
+      "phoneNo": "555-555-5555",
+      "whatsaapNo": "555-555-5555",
+      "email": "example.gmail.com"
+    },
+    {
+      "id": "448d",
+      "productName": "qwfer",
+      "productPrice": "jmhgfnds",
+      "productImage": "C:\\fakepath\\image0 (2).jpeg",
+      "productDescription": "tnbgdfv",
+      "name": "tyrbd",
+      "location": "yrtfgbd",
+      "availability": "",
+      "phoneNo": "rtdf",
+      "whatsaapNo": "trefvds",
+      "email": "mlangaviclyde@gmail.com"
+    }
+  ]
 }

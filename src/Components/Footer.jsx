@@ -6,6 +6,8 @@ import { FaLinkedin } from "react-icons/fa6";
 
 const  Footer = () => {
 
+    
+
     return (
         <footer>
             <div className={styles.footer}>
@@ -20,11 +22,12 @@ const  Footer = () => {
                     Open to Full-Time Opportunities. <br />
                     Suggestions or just a simple hi? <br />
                     HIT ME UP:
+                    </p>
                     <div className={styles.icons}>
                         <Link className={styles.icon1} to=""><FaSquareGithub /></Link>
                         <Link className={styles.icon2} to=""><FaLinkedin /></Link>
                     </div>
-                    </p>
+                    
                 </div>
                 <div className={styles.cont}>
                     <div className={styles.top}>

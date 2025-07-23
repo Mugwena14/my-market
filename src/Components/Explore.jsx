@@ -23,6 +23,7 @@ const Explore = () => {
         fetchProduct();
     }, [])
 
+
     return (
         <>
                 <div className={styles.goBack}>
