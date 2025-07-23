@@ -14,25 +14,65 @@ const  Footer = () => {
                         <span  className={styles.logoL}>
                             L
                         </span>
-                        KART
+                        Kart!
                     </h2>
-                    <p className={styles.suggestions}>Questions, Suggestions or just a simple hi? HMU @loopkart.mugwena.co.za OR:</p>
+                    <p> Jr FrontEnd Dev | React. <br />
+                    Open to Full-Time Opportunities. <br />
+                    Suggestions or just a simple hi? <br />
+                    HIT ME UP:
                     <div className={styles.icons}>
                         <Link className={styles.icon1} to=""><FaSquareGithub /></Link>
                         <Link className={styles.icon2} to=""><FaLinkedin /></Link>
                     </div>
-                    <div className={styles.important}>
-                        <Link className={styles.terms} to='/Terms'>
-                            <p>Terms & Conditions</p>
-                        </Link>
-                        <Link className={styles.conditions} to='/Privacy'>
-                            <p>&middot; Privacy Policy</p>
-                        </Link>
-                        <p>&middot; All Rights Reserved</p>
+                    </p>
+                </div>
+                <div className={styles.cont}>
+                    <div className={styles.top}>
+                        <h3>CONTACT</h3>
+                    </div>
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>GitHub</Link></p>
+                        <p><Link className={styles.links} to=''>LinkedIn</Link></p>
+                        <p><Link className={styles.links} to=''>Email</Link></p>
+                        <p><Link className={styles.links} to=''>Phone</Link></p>
+                    </div>
+                </div>
+                <div className={styles.cont}>
+                    <div className={styles.top}>
+                        <h3>HELP</h3>
+                    </div>
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to='/Terms'>Terms & Conditions</Link></p>
+                        <p><Link className={styles.links} to='/Privacy'>Policy & Privacy</Link></p>
+                        <p><Link className={styles.links} to=''>Customer Support</Link></p>
+                        <p><Link className={styles.links} to=''>Delivery Details</Link></p>
+                    </div>
+                </div>
+                <div className={styles.cont}>
+                    <div className={styles.top}>
+                        <h3>CAREER</h3>
+                    </div>
+                    <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>Resume</Link></p>
+                        <p><Link className={styles.links} to=''>Portfolio</Link></p>
+                        <p><Link className={styles.links} to=''>Certified Responsive Web Design</Link></p>
+                        <p><Link className={styles.links} to=''>Certified Algorithms in JavaScript</Link></p>
+                    </div>
+                </div>
+                <div className={styles.cont}>
+                    <div className={styles.top}>
+                        <h3>RESOURCES</h3>
+                    </div>
+                    <div className={styles.info}>
+                        <p>HTML / CSS</p>
+                        <p>React</p>
+                        <p>FireBase</p>
+                        <p>Git</p>
                     </div>
                 </div>
             </div>
         </footer>
+
     )
 }
 

@@ -1,12 +1,4 @@
-.tgl1{
-    position: relative;
-    right: 217px;
-}
 
-.tgl2{
-    position: relative;
-    right: 260px;
-}
 
 
 .aboutCont{
@@ -120,6 +112,8 @@ h2{
     }
 }
 
+
+
 .btn{
     background-color: transparent;
     border: none;
@@ -138,4 +132,5 @@ h2{
     position: relative;
     bottom: -4.2px;
 }
+
 
