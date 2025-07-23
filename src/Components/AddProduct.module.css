@@ -85,13 +85,13 @@ h2{
     form{
         margin: 20px;
     }section{
-        height: 80vh;
+        height: 85vh;
     }
 }
 
 @media(max-width: 770px){
     section{
-        height: 60rem;
+        height: 62rem;
     }
 }
 

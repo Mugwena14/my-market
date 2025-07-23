@@ -38,14 +38,21 @@ const AddProducts = () => {
                             <label htmlFor="description">Product Description:</label><br />
                             <textarea 
                             required
-                            name='price'
-                            id='price'
+                            name='description'
+                            id='description'
                             placeholder='A short description about your product.'/>
-                    <label htmlFor="location">Location:</label><br />
-                    <input required type="text"
-                    name='location'
-                    id='location'
-                    placeholder='Province & nearest Town/City.'/><br />
+
+                            <label htmlFor="name">Your Name:</label><br />
+                            <input required type="text"
+                            name='name'
+                            id='name'
+                            placeholder='First Name Only'/><br />
+
+                            <label htmlFor="location">Location:</label><br />
+                            <input required type="text"
+                            name='location'
+                            id='location'
+                            placeholder='Province & nearest Town/City.'/><br />
                     
                     <label htmlFor="availability">Availability:</label><br />
                     <select required name="availability" id="availability">

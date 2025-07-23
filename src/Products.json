@@ -1,0 +1,14 @@
+{
+    "posts": [
+        { "id": "1", 
+        "productName": "Play Station 6", 
+        "productPrice": "R11 0000",
+        "productImage": "",
+        "productDescription": "2024 PlayStation 5, a console, 2 controllers and 1 FC 24 game",
+        "location": "Guateng - Pretoria",
+        "availability": "Afternoons",
+        "phoneNo": "555-555-5555",
+        "whatsaapNo": "555-555-5555",
+        "email": "example.gmail.com"}
+    ]
+}

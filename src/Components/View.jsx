@@ -39,7 +39,7 @@ const View = () => {
                 <div className={styles.box2}>
                     <p><span className={styles.name}>Langavi, Based in Gauteng - Pretoria</span></p>
                     <h1>Apple iPhone 16</h1>
-                    <h2>R17 000</h2>
+                    <h2 className={styles.price}>R17 000</h2>
                         
                     <div className={styles.description}>
                         <div className={styles.desHead}>
