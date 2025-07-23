@@ -16,7 +16,7 @@ const NavBar = () => {
         <div className={styles.fixed}>
             <div className={styles.nav}>
                 <div className={styles.logo}>
-                <h3>Yoo Loop</h3>
+                <h3><span className={styles.loop}>L</span> Kart!</h3>
                 </div>
                 <div className={styles.links}>
                     <Link className={styles.link} to="/Index">Home</Link>

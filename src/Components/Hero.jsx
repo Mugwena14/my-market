@@ -14,8 +14,8 @@ const Hero = () => {
                 <div className={styles.left}>
                     <h2>Discover &</h2>
                     <h2>Sell items Digitally.</h2>
-                    <h2>Only on Yoo!</h2>
-                    <p>Ready to Benefit? Let 'Yoo Loop' connect <br/> the dots to your next sell / next purchase.<br/> 
+                    <h2>Only on LoopKart!</h2>
+                    <p>Ready to Benefit? Let 'LoopKart' connect <br/> the dots to your next sell / next purchase.<br/> 
                     <span> FREE OF CHARGE.</span>
                     </p>
                     <div className={styles.buttons}>
