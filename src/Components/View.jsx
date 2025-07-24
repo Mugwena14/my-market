@@ -12,12 +12,13 @@ import { useState, useEffect } from 'react';
 import { MdExpandLess } from "react-icons/md";
 import image from '../assets/images/playStation.jpeg'
 import { useParams } from 'react-router-dom';
-
+import Spinner from './Spinner';
 
 const View = () => {
 
     const [show, setShow] = useState(false);
     const [product, setProduct] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const { id } = useParams();
 
@@ -33,6 +34,8 @@ const View = () => {
                 setProduct(data);
             }catch{
                 console.error('Could not find Product', error)
+            }finally{
+                setLoading(false);
             }
         }
         fetchProduct();
@@ -40,100 +43,104 @@ const View = () => {
 
 
     return (
-        <div className={styles.view}>
-            <div className={styles.goBack}>
-                <Link to='/Explore' className={styles.back}>
-                    <p>
-                        <span className={styles.backIcon}><IoArrowBackOutline /></span>
-                        Go back
-                    </p>
-                </Link>
-            </div>
-            <div className={styles.cont}>
-                <div className={styles.box1}>
-                    <img src={product.productImage} alt="IMG" />
-                </div>
-                <div className={styles.box2}>
-                    <p><span className={styles.name}>
-                        {product.name}, Based in {product.location}
-                        </span>
-                    </p>
-                    <h1>{product.productName}</h1>
-                    <h2 className={styles.price}>{product.productPrice}</h2>
-                        
-                    <div className={styles.description}>
-                        <div className={styles.desHead}>
-                            <h3>Product Description</h3>
-                            <span className={styles.down} onClick={() => handleClick()}>
-                                {show ? (
-                                    <span className={styles.expandLess}>
-                                        <MdExpandLess />
-                                    </span>
-                                ) : (
-                                    <span className={styles.expandMore}>
-                                        <FaChevronDown />
-                                    </span>
-                                )}
-                            </span>
+        <>
+            {loading ? <Spinner /> : (
+                <div className={styles.view}>
+                    <div className={styles.goBack}>
+                        <Link to='/Explore' className={styles.back}>
+                            <p>
+                                <span className={styles.backIcon}><IoArrowBackOutline /></span>
+                                Go back
+                            </p>
+                        </Link>
+                    </div>
+                    <div className={styles.cont}>
+                        <div className={styles.box1}>
+                            <img src={product.productImage} alt="IMG" />
                         </div>
-                        {show ? (
+                        <div className={styles.box2}>
+                            <p><span className={styles.name}>
+                                {product.name}, Based in {product.location}
+                                </span>
+                            </p>
+                            <h1>{product.productName}</h1>
+                            <h2 className={styles.price}>{product.productPrice}</h2>
+                                
+                            <div className={styles.description}>
+                                <div className={styles.desHead}>
+                                    <h3>Product Description</h3>
+                                    <span className={styles.down} onClick={() => handleClick()}>
+                                        {show ? (
+                                            <span className={styles.expandLess}>
+                                                <MdExpandLess />
+                                            </span>
+                                        ) : (
+                                            <span className={styles.expandMore}>
+                                                <FaChevronDown />
+                                            </span>
+                                        )}
+                                    </span>
+                                </div>
+                                {show ? (
 
-                            <p>{product.productDescription}.</p>
-                        ) : ('')}
-                    </div>
-                    <p className={styles.available}>
-                                <span className={styles.note}>
-                                    <AiOutlineExclamationCircle />
-                                </span>
-                                <span className={styles.noteParagraph}>
-                                    I'm available during <span className={styles.time}>{product.availability}.</span>
-                                </span>
-                        </p>
-                    <div className={styles.contact}>
-                        
-                            <div className={styles.contacts}>
-                                <div className={styles.left}>
-                                    <div className={styles.social}>
-                                        <div className={styles.icon}>
-                                            <span className={styles.icons}>
-                                                <IoCallSharp  className={styles.calls}/>
-                                            </span>
-                                        </div>
-                                        <div className={styles.info}>
-                                            <p className={styles.contactUp}>Calls</p>
-                                            <p className={styles.contactBelow}>{product.phoneNo}</p>
-                                        </div>
-                                    </div>
-                                    <div className={styles.social}>
-                                        <div className={styles.icon}>
-                                            <span className={styles.icons}>
-                                                <MdEmail  className={styles.email}/>
-                                            </span>
-                                        </div>
-                                        <div className={styles.info}>
-                                            <p className={styles.contactUp}>Email</p>
-                                            <p className={styles.contactBelow}>{product.email}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className={styles.right}>
-                                    <div className={styles.social}>
-                                        <div className={styles.icon}>
-                                            <span className={styles.icons}>
-                                                <FaWhatsapp className={styles.whatsaap} />
-                                            </span>
-                                        </div>
-                                        <div className={styles.info}>
-                                            <p className={styles.contactUp}>Whatsaap</p>
-                                            <p className={styles.contactBelow}>{product.whatsaapNo}</p>
-                                        </div>
-                                    </div>
-                                </div>
+                                    <p>{product.productDescription}.</p>
+                                ) : ('')}
                             </div>
+                            <p className={styles.available}>
+                                        <span className={styles.note}>
+                                            <AiOutlineExclamationCircle />
+                                        </span>
+                                        <span className={styles.noteParagraph}>
+                                            I'm available during <span className={styles.time}>{product.availability}.</span>
+                                        </span>
+                                </p>
+                            <div className={styles.contact}>
+                                
+                                    <div className={styles.contacts}>
+                                        <div className={styles.left}>
+                                            <div className={styles.social}>
+                                                <div className={styles.icon}>
+                                                    <span className={styles.icons}>
+                                                        <IoCallSharp  className={styles.calls}/>
+                                                    </span>
+                                                </div>
+                                                <div className={styles.info}>
+                                                    <p className={styles.contactUp}>Calls</p>
+                                                    <p className={styles.contactBelow}>{product.phoneNo}</p>
+                                                </div>
+                                            </div>
+                                            <div className={styles.social}>
+                                                <div className={styles.icon}>
+                                                    <span className={styles.icons}>
+                                                        <MdEmail  className={styles.email}/>
+                                                    </span>
+                                                </div>
+                                                <div className={styles.info}>
+                                                    <p className={styles.contactUp}>Email</p>
+                                                    <p className={styles.contactBelow}>{product.email}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className={styles.right}>
+                                            <div className={styles.social}>
+                                                <div className={styles.icon}>
+                                                    <span className={styles.icons}>
+                                                        <FaWhatsapp className={styles.whatsaap} />
+                                                    </span>
+                                                </div>
+                                                <div className={styles.info}>
+                                                    <p className={styles.contactUp}>Whatsaap</p>
+                                                    <p className={styles.contactBelow}>{product.whatsaapNo}</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            )}
+        </>
     )
 }
 

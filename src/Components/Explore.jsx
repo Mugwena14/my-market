@@ -5,10 +5,12 @@ import { Link } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useEffect, useState } from 'react'
 import Cards from './Product'
+import Spinner from './Spinner';
 
 const Explore = () => {
 
     const [products, setProducts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         async function fetchProduct(){
@@ -18,6 +20,8 @@ const Explore = () => {
                 setProducts(data);
             }catch{
                 console.log('Could not find Product', error)
+            }finally{
+                setLoading(false)
             }
         }
         fetchProduct();
@@ -26,6 +30,12 @@ const Explore = () => {
 
     return (
         <>
+                {loading ? <>
+                <Spinner/>
+                </> : 
+                
+                <>
+                
                 <div className={styles.goBack}>
                     <Link to='/Index' className={styles.back}>
                         <p>
@@ -44,6 +54,8 @@ const Explore = () => {
                         )}
                     </div>
                 </div>
+                
+                </>}
         </>
     )
 }
