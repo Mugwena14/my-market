@@ -1,5 +1,5 @@
 import styles from './AddProduct.module.css'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
 import { useState } from 'react';
 
@@ -16,13 +16,15 @@ const AddProducts = ({ onSubmitForm }) => {
     const [whatsaapNo, setWhatsaapNo] = useState('');
     const [email, setEmail] = useState('');
 
+    const navigate = useNavigate();
+
     function handleSubmit(e){
         e.preventDefault();
 
         const newProduct = {
             productName,
             productPrice,
-            productImage,
+            productImage: `https://${productImage}`,
             productDescription,
             name,
             location,
@@ -32,6 +34,7 @@ const AddProducts = ({ onSubmitForm }) => {
             email,
         };
         onSubmitForm(newProduct);
+        navigate('/Explore')
     }
 
 

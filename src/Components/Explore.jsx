@@ -38,9 +38,11 @@ const Explore = () => {
                     <div>
                         <h1>Browse Products</h1>
                     </div>
+                    <div className={styles.product}>
                         {products.map((product) =>
                         <Cards key={product.id} product={product}/>
                         )}
+                    </div>
                 </div>
         </>
     )
