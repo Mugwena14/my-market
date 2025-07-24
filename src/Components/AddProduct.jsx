@@ -121,6 +121,7 @@ const AddProducts = ({ onSubmitForm }) => {
                     }}
                     name="availability" 
                     id="availability">
+                        <option value="">Choose your cup of tea.</option>
                         <option value="Mornings">Mornings</option>
                         <option value="Afternoons">Afternoons</option>
                         <option value="Evenings">Evenings</option>
