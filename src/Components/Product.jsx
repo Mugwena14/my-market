@@ -3,18 +3,23 @@ import styles from './Explore.module.css'
 import { Link } from 'react-router-dom' 
 
 const Cards = ({ product }) => {
+
+
     return(
         <div className={styles.container}>
-            <Link to={`/View/${product.id}`} className={styles.link}>
                 <div className={styles.box}>
-                    <img src={product.productImage} alt="" />
+                    <div>
+                        <img src={product.productImage} alt="" />
+                    </div>
                     <div className={styles.info}>
                         <h3>{product.productName}</h3>
-                        <p>{product.name}</p>
+                    <Link to={`/View/${product.id}`} className={styles.link}>
+                        <p><button className={styles.viewing}>View</button></p>
+                    </Link>
                     </div>
                 </div>
-            </Link>
         </div>
+        
     )
 }
 

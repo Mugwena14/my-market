@@ -10,6 +10,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 70px;
+    gap: 20px;
 }
 
 h1{
@@ -21,7 +22,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    padding: 50px;
+    padding: 20px;
     justify-content: center;
     gap: 20px;
 }
@@ -29,14 +30,15 @@ h1{
 .box{
     border: 1px solid hsl(0, 0%, 40%);
     border-radius: 10px;
-    box-shadow: 3px 3px 3px hsl(0, 0%, 0%, 0.4);
-    background-color: hsl(0, 0%, 90%);
+    box-shadow: 3px 3px 3px hsl(0, 10%, 20%, 0.3);
+    background-color: hsl(0, 0%, 97%);
 }
 
 .box img{
-    width: 180px;
-    height: 180px;
-    border-radius: 9px 9px 0 0;
+    width: 150px;
+    height: 130px;
+    margin: 10px;
+    border-radius: 9px 9px 9px 9px;
 }
 
 
@@ -44,22 +46,34 @@ h1{
 .box h3{
     display: flex;
     justify-content: center;
-    margin-top: -2px;
+    margin-top: -5px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: hsl(0, 0%, 30%);
+    color: hsl(0, 0%, 10%);
 }
 
 .box p{
     display: flex;
     justify-content: center;
-    margin-top: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin: 20px;
     font-weight: 200;
+    margin-bottom: 0;
     color: hsl(0, 0%, 30%);
+}
+
+button{
+    display: block;
+    width: 100%;
+    margin: 0 20px;
+}
+
+.viewing{
+    border-radius: 4px;
+    background-color: hsl(204, 100%, 55%);
 }
 
 .link{
