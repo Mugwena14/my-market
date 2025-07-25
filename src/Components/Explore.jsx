@@ -31,7 +31,7 @@ const Explore = () => {
       {loading ? (
         <Spinner />
       ) : (
-        <>
+        <div className={styles.this}>
           <div className={styles.goBack}>
             <Link to='/Index' className={styles.back}>
               <p>
@@ -51,7 +51,7 @@ const Explore = () => {
               ))}
             </div>
           </div>
-        </>
+        </div>
       )}
     </>
   );

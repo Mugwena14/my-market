@@ -4,7 +4,6 @@ section{
     margin: 20px 0;
     margin-bottom: 50px;
     height: 150vh;
-    background-color: hsl(187, 30%, 95%);
 }
 
 input, select, textarea{
@@ -51,8 +50,6 @@ form{
     margin: 20px 20%;
     background-color: white;
     margin-bottom: 20px;
-    position: relative;
-    bottom: -50px;
 }
 
 button{
@@ -101,6 +98,7 @@ h2{
     font-size: 13px;
     color: hsl(201, 41%, 47%);
     text-decoration: none;
+    position: relative;
 }
 
 .back:active{
@@ -116,7 +114,11 @@ h2{
 
 .goBack{
     padding: 10px;
-    background-color: hsl(187, 30%, 95%);
     text-decoration: none;
     margin-bottom: -60px;
+}
+
+.cont{
+    position: relative;
+    top: -1100px;
 }

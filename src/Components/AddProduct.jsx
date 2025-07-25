@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { db, storage } from '../config/firebase'; // update path if needed
 import { collection, addDoc } from 'firebase/firestore';
 import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const AddProducts = ({ onSubmitForm }) => {
   const [productName, setProductName] = useState('');
@@ -21,6 +23,7 @@ const AddProducts = ({ onSubmitForm }) => {
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
+      toast.success('Adding product...');
     e.preventDefault();
 
     try {
@@ -47,6 +50,7 @@ const AddProducts = ({ onSubmitForm }) => {
 
       await addDoc(collection(db, 'products'), productData);
       onSubmitForm?.(productData);
+      toast.success('Re-directing');
       navigate('/Explore');
     } catch (error) {
       console.error("🔥 Error uploading product:", error);
@@ -56,6 +60,7 @@ const AddProducts = ({ onSubmitForm }) => {
   return (
     <div className={styles.cont}>
       <section>
+        <ToastContainer className={styles.toast}/>
         <div className={styles.goBack}>
           <Link to='/Index' className={styles.back}>
             <p>
