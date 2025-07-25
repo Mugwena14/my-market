@@ -23,7 +23,9 @@ const AddProducts = ({ onSubmitForm }) => {
   
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
-      toast.success('Adding product...');
+    toast.success('Adding product...', {
+      autoClose: 6000,
+    });
     e.preventDefault();
 
     try {
@@ -50,7 +52,6 @@ const AddProducts = ({ onSubmitForm }) => {
 
       await addDoc(collection(db, 'products'), productData);
       onSubmitForm?.(productData);
-      toast.success('Re-directing');
       navigate('/Explore');
     } catch (error) {
       console.error("🔥 Error uploading product:", error);
