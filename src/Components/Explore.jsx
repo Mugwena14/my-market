@@ -20,8 +20,8 @@ const Explore = () => {
         ...doc.data()
       }));
       setProducts(fetched);
-      setLoading(false); // ⬅️ don't forget this!
-    });
+      setLoading(false); 
+    }, 2000);
 
     return () => unsub(); // cleanup listener
   }, []);
