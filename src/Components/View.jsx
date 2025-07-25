@@ -14,6 +14,10 @@ import image from '../assets/images/playStation.jpeg'
 import { useParams } from 'react-router-dom';
 import Spinner from './Spinner';
 
+// Firebase
+import { db } from '../config/firebase'
+import { doc, onSnapshot } from 'firebase/firestore';
+
 const View = () => {
 
     const [show, setShow] = useState(false);
@@ -27,19 +31,18 @@ const View = () => {
     }
 
     useEffect(() => {
-        async function fetchProduct(){
-            try{
-                const res = await fetch(`http://localhost:3001/posts/${id}`);
-                const data = await res.json();
-                setProduct(data);
-            }catch{
-                console.error('Could not find Product', error)
-            }finally{
-                setLoading(false);
+        const productRef = doc(db, 'products', id);
+        const unsub = onSnapshot(productRef, (snapshot) => {
+            if(snapshot.exists()){
+                setProduct(snapshot.data());
+            } else {
+                console.error('Product not found');
             }
-        }
-        fetchProduct();
-    }, [])
+            setLoading(false);
+        });
+
+        return () => unsub();
+    }, [id])
 
 
     return (

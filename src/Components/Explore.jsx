@@ -1,63 +1,60 @@
-import styles from './Explore.module.css'
-import image from '../assets/images/playStation.jpeg'
-import React from 'react'
-import { Link } from 'react-router-dom'
+import styles from './Explore.module.css';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { IoArrowBackOutline } from "react-icons/io5";
-import { useEffect, useState } from 'react'
-import Cards from './Product'
+import Cards from './Product';
 import Spinner from './Spinner';
 
+import { db } from '../config/firebase'; // adjust if path differs
+import { collection, onSnapshot } from 'firebase/firestore';
+
 const Explore = () => {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
 
-    const [products, setProducts] = useState([]);
-    const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const productsRef = collection(db, 'products');
+    const unsub = onSnapshot(productsRef, (snapshot) => {
+      const fetched = snapshot.docs.map(doc => ({
+        id: doc.id,
+        ...doc.data()
+      }));
+      setProducts(fetched);
+      setLoading(false); // ⬅️ don't forget this!
+    });
 
-    useEffect(() => {
-        async function fetchProduct(){
-            try{
-                const res = await fetch('http://localhost:3001/posts');
-                const data = await res.json();
-                setProducts(data);
-            }catch{
-                console.log('Could not find Product', error)
-            }finally{
-                setLoading(false)
-            }
-        }
-        fetchProduct();
-    }, [])
+    return () => unsub(); // cleanup listener
+  }, []);
 
-
-    return (
+  return (
+    <>
+      {loading ? (
+        <Spinner />
+      ) : (
         <>
-                {loading ? <>
-                <Spinner/>
-                </> : 
-                
-                <>
-                
-                <div className={styles.goBack}>
-                    <Link to='/Index' className={styles.back}>
-                        <p>
-                            <span className={styles.backIcon}><IoArrowBackOutline /></span>
-                            Home
-                        </p>
-                    </Link>
-                </div>
-                <div className={styles.explore}>
-                    <div>
-                        <h1>Browse Products</h1>
-                    </div>
-                    <div className={styles.product}>
-                        {products.map((product) =>
-                        <Cards key={product.id} product={product}/>
-                        )}
-                    </div>
-                </div>
-                
-                </>}
-        </>
-    )
-}
+          <div className={styles.goBack}>
+            <Link to='/Index' className={styles.back}>
+              <p>
+                <span className={styles.backIcon}><IoArrowBackOutline /></span>
+                Home
+              </p>
+            </Link>
+          </div>
 
-export default Explore
+          <div className={styles.explore}>
+            <div>
+              <h1>Browse Products</h1>
+            </div>
+            <div className={styles.product}>
+              {products.map((product) => (
+                <Cards key={product.id} product={product} />
+              ))}
+            </div>
+          </div>
+        </>
+      )}
+    </>
+  );
+};
+
+export default Explore;
