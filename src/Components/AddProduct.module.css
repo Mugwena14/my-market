@@ -83,12 +83,20 @@ h2{
         margin: 20px;
     }section{
         height: 85vh;
+    }.cont{
+        margin-top: 20px;
+    }.back{
+        padding: 30px;
     }
 }
 
 @media(max-width: 770px){
     section{
         height: 62rem;
+    }.cont{
+        margin-top: 50px;
+    }.back{
+        padding: 30px;
     }
 }
 
