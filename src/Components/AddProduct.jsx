@@ -20,8 +20,8 @@ const AddProducts = ({ onSubmitForm }) => {
   const [whatsaapNo, setWhatsaapNo] = useState('');
   const [email, setEmail] = useState('');
 
+  
   const navigate = useNavigate();
-
   const handleSubmit = async (e) => {
       toast.success('Adding product...');
     e.preventDefault();
