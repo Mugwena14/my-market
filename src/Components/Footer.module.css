@@ -116,6 +116,11 @@
         flex-direction: row;
     }.cont:nth-child(3){
         margin-top: -70px;
+    }.leftLogo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 
