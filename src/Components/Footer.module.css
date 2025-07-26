@@ -28,6 +28,7 @@
 .top h3{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+    margin-bottom: 18px;
 }
 
 .cont p{
@@ -70,10 +71,23 @@
 
 .icon2{
     font-size: 18px;
-    color: black;
+    color: #0077B5;
 }
 
-.icon1:hover , .icon2:hover{
+.icon3{
+    font-size: 18px;
+    color: #1DA1F2;
+}
+
+.icon4{
+    font-size: 20px;
+    color: red;
+}
+
+.icon1:hover , 
+.icon2:hover,
+.icon3:hover,
+.icon4:hover{
     transform: scale(1.3);
     transition: ease-in-out;
 }
