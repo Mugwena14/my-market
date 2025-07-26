@@ -19,6 +19,10 @@ body{
     padding: 4px 8px;
 }
 
+.logo h3{
+    font-size: 21px;
+}
+
 .fixed{
     position: sticky;
     backdrop-filter: blur(100px);
@@ -78,7 +82,7 @@ button:hover{
 
 .hideMenu{
     color: black;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .side{
@@ -133,6 +137,7 @@ button:hover{
 
 .sideMenu{
     height: auto;
+    font-size: 20px;
 }
 
 @media(max-width: 760px){

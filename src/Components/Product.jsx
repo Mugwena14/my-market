@@ -14,7 +14,7 @@ const Cards = ({ product }) => {
                     <div className={styles.info}>
                         <h3>{product.productName}</h3>
                     <Link to={`/View/${product.id}`} className={styles.link}>
-                        <p><button className={styles.viewing}>View</button></p>
+                        <p className={styles.viewBtn}><button className={styles.viewing}>View</button></p>
                     </Link>
                     </div>
                 </div>
