@@ -1,6 +1,32 @@
 img{
-    transform: rotate(-90deg);
     margin: 0 auto;
     display: block;
-    width: 400px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+@media(max-width: 1115px){
+    img{
+        width: 300px;
+    }
+}
+
+.home{
+    color: black;
+    font-size: 15px;
+    margin-left: 25px;
+}
+
+.back{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.arrow{
+    color: black;
+    margin-right: -23px;
+    position: relative;
+    top: -2px;
 }

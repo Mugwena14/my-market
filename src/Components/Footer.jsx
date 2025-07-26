@@ -34,10 +34,10 @@ const  Footer = () => {
                         <h3>CONTACT</h3>
                     </div>
                     <div className={styles.info}>
-                        <p><Link className={styles.links} to=''>GitHub</Link></p>
-                        <p><Link className={styles.links} to=''>LinkedIn</Link></p>
-                        <p><Link className={styles.links} to=''>Email</Link></p>
-                        <p><Link className={styles.links} to=''>Phone</Link></p>
+                        <p><Link className={styles.links} to='https://github.com/Mugwena14'>GitHub</Link></p>
+                        <p><Link className={styles.links} to='https://linkedin.com/in/langavi-makhubele-clyde'>LinkedIn</Link></p>
+                        <p><Link className={styles.links} to='maitlto:mlangaviclyde@gmail.com'>Email</Link></p>
+                        <p><Link className={styles.links} to='tel:0685021117'>Phone</Link></p>
                     </div>
                 </div>
                 <div className={styles.cont}>
