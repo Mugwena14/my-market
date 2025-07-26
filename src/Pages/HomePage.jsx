@@ -1,4 +1,3 @@
-import Card from "../Components/Card";
 import Hero from "../Components/Hero";
 
 

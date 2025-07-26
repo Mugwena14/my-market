@@ -15,22 +15,24 @@ const  Footer = () => {
         <footer>
             <div className={styles.footer}>
                 <div className={styles.cont}>
-                    <h2 className={styles.logo}>
+                    <div className={styles.leftLogo}>
+                        <h2 className={styles.logo}>
                         <span  className={styles.logoL}>
                             L
                         </span>
                         Kart!
-                    </h2>
-                    <p> Jr FrontEnd Dev | React. <br />
-                    Open to Full-Time Opportunities. <br />
-                    Suggestions or just a simple hi? <br />
-                    HIT ME UP:
-                    </p>
+                        </h2>
+                    </div>
+                        <p> Jr FrontEnd Dev | React. <br />
+                        Open to Full-Time Opportunities. <br />
+                        Ideas, Feedbacks or just a simple hi? <br />
+                        REACH OUT:
+                        </p>
                     <div className={styles.icons}>
                         <Link className={styles.icon1} to='https://github.com/Mugwena14'><FaSquareGithub /></Link>
                         <Link className={styles.icon2} to='https://linkedin.com/in/langavi-makhubele-clyde'><FaLinkedin /></Link>
                         <Link className={styles.icon3} to='https://x.com/MugwenaDev'><FaXTwitter /></Link>
-                        <Link className={styles.icon4} to='https://x.com/MugwenaDev'><FaYoutube /></Link>
+                        <Link className={styles.icon4} to='https://youtube.com/@MugwenaDev'><FaYoutube /></Link>
                     </div>
                     
                 </div>

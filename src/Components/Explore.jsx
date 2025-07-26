@@ -1,12 +1,11 @@
 import styles from './Explore.module.css';
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { IoAr    text-decoration: none;
-rowBackOutline } from "react-icons/io5";
+import { IoArrowBackOutline } from "react-icons/io5";
 import Cards from './Product';
 import Spinner from './Spinner';
 
-import { db } from '../config/firebase'; // adjust if path differs
+import { db } from '../config/firebase';
 import { collection, onSnapshot } from 'firebase/firestore';
 
 const Explore = () => {
@@ -24,7 +23,7 @@ const Explore = () => {
       setLoading(false); 
     }, 2000);
 
-    return () => unsub(); // cleanup listener
+    return () => unsub();
   }, []);
 
   return (

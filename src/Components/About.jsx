@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import styles from '../Components/About.module.css'
-import { FaSquareGithub } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa6";
+import { 
+    FaSquareGithub,
+    FaLinkedin,
+    FaXTwitter
+} from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { MdExpandMore } from "react-icons/md";
 import { MdExpandLess } from "react-icons/md";
@@ -31,8 +35,10 @@ const About = () => {
                             Catch the creator behind this build:
                         </p>
                         <div className={styles.icons}>
-                            <Link className={styles.icon1} to=""><FaSquareGithub /></Link>
-                            <Link className={styles.icon2} to=""><FaLinkedin /></Link>
+                            <Link className={styles.icon1} to='https://github.com/Mugwena14'><FaSquareGithub /></Link>
+                            <Link className={styles.icon2} to='https://linkedin.com/in/langavi-makhubele-clyde'><FaLinkedin /></Link>
+                            <Link className={styles.icon3} to='https://x.com/MugwenaDev'><FaXTwitter /></Link>
+                            <Link className={styles.icon4} to='https://youtube.com/@MugwenaDev'><FaYoutube /></Link>
                         </div>
                 </div>
                 <div className={styles.contRight}>

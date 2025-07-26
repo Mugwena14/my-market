@@ -89,8 +89,22 @@ h2{
     color: #0077B5;
 }
 
-.icon1:hover , .icon2:hover{
+.icon3{
+    font-size: 18px;
+    color: #1DA1F2;
+}
+
+.icon4{
+    font-size: 20px;
+    color: red;
+}
+
+.icon1:hover , 
+.icon2:hover,
+.icon3:hover,
+.icon4:hover{
     transform: scale(1.3);
+    transition: ease-in-out;
 }
 
 @media(max-width: 760px){

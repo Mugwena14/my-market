@@ -1,5 +1,6 @@
 import styles from '../Components/Hero.module.css'
-import snd from '../assets/images/iPhone-16-Plus.png'
+import product from '../assets/images/product.jpeg'
+import productAfter from '../assets/images/productAfter.jpeg'
 import { CiLocationOn } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { CiDollar } from "react-icons/ci";
@@ -30,39 +31,28 @@ const Hero = () => {
                 <div className={styles.right}>
                     <div className={styles.first}>
                         <div className={styles.image}>
-                            <img src={snd} alt="" />
+                            <img src={product} alt="Image on Listings" />
                         </div>
                         <div className={styles.info}>
                             <p><CiUser />
-                            <span className={styles.tags}>
-                                NAME
-                            </span>
                             </p>
                             <p><CiLocationOn />
-                            <span className={styles.tags}>
-                                Location
-                            </span>
                             </p>
                             <div className={styles.bottom}>
                             <p><CiDollar /> 
-                            <span className={styles.tags}>
-                                Price
-                            </span>
                             </p>
-                            <button>View</button>
                             </div>
                         </div>
                     </div>
                     <div className={styles.second}>
                         <div className={styles.image}>
-                            <img src={snd} alt="" />
+                            <img src={productAfter} alt="product After" />
                         </div>
                         <div className={styles.info}>
                             <p>NAME</p>
                             <p>Location</p>
                             <div className={styles.bottom}>
                             <p>Price</p>
-                            <button>View</button>
                             </div>
                         </div>
                     </div>

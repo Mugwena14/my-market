@@ -1,5 +1,4 @@
 import styles from './View.module.css'
-import snd from '../assets/images/iPhone-XR.png'
 import { Link } from 'react-router-dom'
 import { IoArrowBackOutline } from "react-icons/io5";
 import { AiOutlineExclamationCircle } from "react-icons/ai";
@@ -10,7 +9,6 @@ import { MdEmail } from "react-icons/md";
 import { IoChatboxOutline } from "react-icons/io5";
 import { useState, useEffect } from 'react';
 import { MdExpandLess } from "react-icons/md";
-import image from '../assets/images/playStation.jpeg'
 import { useParams } from 'react-router-dom';
 import Spinner from './Spinner';
 

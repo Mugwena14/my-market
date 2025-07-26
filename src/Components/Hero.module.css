@@ -68,45 +68,54 @@
 
 .image img{
     width: 220px;
+    height: 220px;
+    margin-top:0;
+    border-bottom: 1px solid hsl(0, 0%, 70%);
     border-radius: 11px 11px 0 0;
 }
 
 .first{
-    border: 2px solid hsl(0, 0%, 20%);
-    height: 315px;
+    border: 2px solid hsl(0, 0%, 50%);
+    height: 245px;
     width: 220px;
     border-radius: 12px;
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), hsl(0, 0%, 95%));
     position: relative;
     bottom: -120px;
     z-index: 2;
     transform: skew(-5deg);
-    box-shadow: 2px 5px 8px hsl(0, 0%, 0%);
+    box-shadow: 5px 5px 8px hsl(10, 20%, 25%, 0.4);
 }
 
 .second{
-    border: 2px solid hsl(0, 0%, 20%);
-    height: 315px;
+    border: 2px solid hsl(0, 0%, 50%);
+    height: 245px;
     border-radius: 12px;
+    background: linear-gradient(to bottom, hsl(0, 0%, 0%), hsl(0, 0%, 95%));
     position: relative;
     left: -60px;
     z-index: 1;
     transform: skew(-5deg);
-    box-shadow: 2px 5px 8px hsl(0, 0%, 0%);
+    box-shadow: 5px 5px 8px hsl(0, 10%, 25%, 0.4);
 }
 
 .info{
-    background-color: hsl(0, 0%, 7%);
+    /* background-color: hsl(0, 0%, 97%); */
     border-radius: 0px 0px 9px 9px;
     padding: 0 8px;
     height: 83px;
+    margin-top: 5px;
     padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .info p{
     margin-top: -4px;
-    color: white;
+    color: black;
     font-size: 13px;
-    font-weight: 200;
+    font-weight: 400;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -140,6 +149,9 @@
         width: 150px;
     }.left{
         margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
     }
 }
 
