@@ -54,7 +54,7 @@ const AddProducts = ({ onSubmitForm }) => {
       onSubmitForm?.(productData);
       navigate('/Explore');
     } catch (error) {
-      console.error("🔥 Error uploading product:", error);
+      console.error(" Error uploading product:", error);
     }
   };
 

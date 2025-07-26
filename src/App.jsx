@@ -7,6 +7,9 @@ import ViewPage from './Pages/ViewPage'
 import AddProducts from "./Pages/AddProduct"
 import TermsPage from "./Pages/TermsPage"
 import PrivacyPage from "./Pages/PrivacyPage"
+import JavascriptPage from "./Pages/JavascriptPage"
+import ResponsivePage from "./Pages/ResponsivePage"
+import LibrariesPage from "./Pages/LibrariesPage"
 
 const App = () => {
     
@@ -21,6 +24,9 @@ const App = () => {
           <Route path="/Sell" element={<AddProducts/>}></Route>
           <Route path="/Terms" element={<TermsPage/>}></Route>
           <Route path="/Privacy" element={<PrivacyPage/>}></Route>
+          <Route path="/Javascript" element={<JavascriptPage/>}></Route>
+          <Route path="/Responsive" element={<ResponsivePage/>}></Route>
+          <Route path="/Libraries" element={<LibrariesPage/>}></Route>
         </Route>
       )
     )

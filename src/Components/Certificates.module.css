@@ -1,0 +1,6 @@
+img{
+    transform: rotate(-90deg);
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+}

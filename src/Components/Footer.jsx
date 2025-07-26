@@ -45,10 +45,9 @@ const  Footer = () => {
                         <h3>HELP</h3>
                     </div>
                     <div className={styles.info}>
+                        <p><Link className={styles.links} to=''>How to use</Link></p>
                         <p><Link className={styles.links} to='/Terms'>Terms & Conditions</Link></p>
                         <p><Link className={styles.links} to='/Privacy'>Policy & Privacy</Link></p>
-                        <p><Link className={styles.links} to=''>Customer Support</Link></p>
-                        <p><Link className={styles.links} to=''>Delivery Details</Link></p>
                     </div>
                 </div>
                 <div className={styles.cont}>
@@ -56,10 +55,9 @@ const  Footer = () => {
                         <h3>CAREER</h3>
                     </div>
                     <div className={styles.info}>
-                        <p><Link className={styles.links} to=''>Resume</Link></p>
-                        <p><Link className={styles.links} to=''>Portfolio</Link></p>
-                        <p><Link className={styles.links} to=''>Certified Responsive Web Design</Link></p>
-                        <p><Link className={styles.links} to=''>Certified Algorithms in JavaScript</Link></p>
+                        <p><Link className={styles.links} to='/Javascript'>Certified in Algorithms in JavaScript</Link></p>
+                        <p><Link className={styles.links} to='/Responsive'>Certified in Responsive Web Design</Link></p>
+                        <p><Link className={styles.links} to='/Libraries'>Certified in FrontEnd Libraries</Link></p>
                     </div>
                 </div>
                 <div className={styles.cont}>
