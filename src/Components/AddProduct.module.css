@@ -92,7 +92,7 @@ h2{
     }.back{
         padding: 30px;
     }.submit{
-        margin: 0 100px;
+        margin: 0 200px;
     }
 }
 
@@ -109,6 +109,17 @@ h2{
 @media(max-width: 900px){
     .submit{
         margin: 0 100px;
+    }
+}
+
+@media(max-width: 380px){
+    .form{
+        display: block;
+    }input, select, textarea{
+        width: 200px;
+        
+    }label{
+        margin-left: 28px;
     }
 }
 
