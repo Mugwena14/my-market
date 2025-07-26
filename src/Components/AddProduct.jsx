@@ -108,7 +108,7 @@ const AddProducts = ({ onSubmitForm }) => {
           <label htmlFor="email">Email:</label><br />
           <input required type="email" value={email} onChange={(e) => setEmail(e.target.value)} name='email' id='email' placeholder='example@gmail.com'/><br />
 
-          <button>Submit</button>
+          <p className={styles.submit}><button>Submit</button></p>
         </form>
       </section>
     </div>
