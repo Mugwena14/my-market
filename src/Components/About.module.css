@@ -111,6 +111,8 @@ h2{
     .aboutCont{
         flex-direction: column;
         padding: 30px;
+        align-items: center;
+        text-align: center;
     }h2{
         text-align: center;
     }
@@ -126,7 +128,13 @@ h2{
     }
 }
 
+.tgl1{
+    font-size: 16.5px;
+}
 
+.tgl2{
+    font-size: 16.5px;
+}
 
 .btn{
     background-color: transparent;

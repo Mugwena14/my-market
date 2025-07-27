@@ -11,6 +11,8 @@ import { useState, useEffect } from 'react';
 import { MdExpandLess } from "react-icons/md";
 import { useParams } from 'react-router-dom';
 import Spinner from './Spinner';
+import { CiLocationOn } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
 
 // Firebase
 import { db } from '../config/firebase'
@@ -61,7 +63,8 @@ const View = () => {
                         </div>
                         <div className={styles.box2}>
                             <p><span className={styles.name}>
-                                {product.name}, Based in {product.location}
+                                <span className={styles.boldName1}><CiUser className={styles.user} /> {product.name}</span>
+                                , Based in -<span className={styles.boldName2}><CiLocationOn className={styles.locate} /> {product.location}</span>
                                 </span>
                             </p>
                             <h1>{product.productName}</h1>
@@ -84,7 +87,7 @@ const View = () => {
                                 </div>
                                 {show ? (
 
-                                    <p>{product.productDescription}.</p>
+                                    <p className={styles.descriptionText}>{product.productDescription}.</p>
                                 ) : ('')}
                             </div>
                             <p className={styles.available}>
@@ -93,6 +96,7 @@ const View = () => {
                                         </span>
                                         <span className={styles.noteParagraph}>
                                             I'm available during <span className={styles.time}>{product.availability}.</span>
+                                        Let's connect:
                                         </span>
                                 </p>
                             <div className={styles.contact}>
@@ -107,7 +111,9 @@ const View = () => {
                                                 </div>
                                                 <div className={styles.info}>
                                                     <p className={styles.contactUp}>Calls</p>
-                                                    <p className={styles.contactBelow}>{product.phoneNo}</p>
+                                                    <Link to={`tel:${product.phoneNo}`} className={styles.lookout}>
+                                                        <p className={styles.contactBelow}>{product.phoneNo}</p>
+                                                    </Link>
                                                 </div>
                                             </div>
                                             <div className={styles.social}>
@@ -118,20 +124,26 @@ const View = () => {
                                                 </div>
                                                 <div className={styles.info}>
                                                     <p className={styles.contactUp}>Email</p>
-                                                    <p className={styles.contactBelow}>{product.email}</p>
+                                                    <Link to={`mailto:${product.email}`} className={styles.lookout}>
+                                                        <p className={styles.contactBelow}>{product.email}</p>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
                                         <div className={styles.right}>
-                                            <div className={styles.social}>
-                                                <div className={styles.icon}>
-                                                    <span className={styles.icons}>
-                                                        <FaWhatsapp className={styles.whatsaap} />
-                                                    </span>
-                                                </div>
-                                                <div className={styles.info}>
-                                                    <p className={styles.contactUp}>Whatsaap</p>
-                                                    <p className={styles.contactBelow}>{product.whatsaapNo}</p>
+                                            <div className={styles.whats}>
+                                                <div className={styles.social}>
+                                                    <div className={styles.icon}>
+                                                        <span className={styles.icons}>
+                                                            <FaWhatsapp className={styles.whatsaap} />
+                                                        </span>
+                                                    </div>
+                                                    <div className={styles.info}>
+                                                        <p className={styles.contactUp}>Whatsaap</p>
+                                                        <Link to={`https://wa.me/${product.whatsaapNo}?text=Hi%20there,%20just%20saw%20your%20product%20from%20LoopKart.%20Mind%20telling%20me%20more%20about%20it?`} className={styles.lookout}>
+                                                            <p className={styles.contactBelow}>{product.whatsaapNo}</p>
+                                                        </Link>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
