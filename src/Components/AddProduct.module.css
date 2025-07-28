@@ -52,7 +52,7 @@ form{
     margin-bottom: 20px;
 }
 
-button{
+.submit button{
     margin: 0 auto;
     display: block;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@ button{
     color: white;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
-    padding: 10px 0;
+    padding: 10px 20px;
 }
 
 .submit{

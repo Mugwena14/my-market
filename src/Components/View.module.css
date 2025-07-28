@@ -282,10 +282,6 @@ p{
     margin-top: -7px;
 }
 
-.whats{
-    margin-right: 30px;
-}
-
 
 .box2 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -321,6 +317,20 @@ p{
         margin: 0 20px;
     }.cont{
         margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 500px){
+    .whats{
+        position: relative;
+        left: -25px;
+    }
+}
+
+@media(max-width: 390px){
+    .whats{
+        position: relative;
+        left: -35px;
     }
 }
 

@@ -24,7 +24,7 @@ const AddProducts = ({ onSubmitForm }) => {
   const navigate = useNavigate();
   const handleSubmit = async (e) => {
     toast.success('Adding product...', {
-      autoClose: 8000,
+      autoClose: 10000,
     });
     e.preventDefault();
 
@@ -100,10 +100,10 @@ const AddProducts = ({ onSubmitForm }) => {
           </select><br />
 
           <label htmlFor="phone">Phone No:</label><br />
-          <input required type="tel" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} name='phone' id='phone' placeholder='555-555-5555'/><br />
+          <input required type="tel" value={phoneNo} onChange={(e) => setPhoneNo(e.target.value)} name='phone' id='phone' placeholder='eg: +27-555-555-555'/><br />
 
           <label htmlFor="whatsapp">Whatsaap No:</label><br />
-          <input required type="tel" value={whatsaapNo} onChange={(e) => setWhatsaapNo(e.target.value)} name='whatsapp' id='whatsapp' placeholder='555-555-5555'/><br />
+          <input required type="tel" value={whatsaapNo} onChange={(e) => setWhatsaapNo(e.target.value)} name='whatsapp' id='whatsapp' placeholder='eg: +27-555-555-555'/><br />
 
           <label htmlFor="email">Email:</label><br />
           <input required type="email" value={email} onChange={(e) => setEmail(e.target.value)} name='email' id='email' placeholder='example@gmail.com'/><br />
