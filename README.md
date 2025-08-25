@@ -1,12 +1,54 @@
-# React + Vite
+🔗 [Visit Matric IQ Live](https://matric-iq.vercel.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 🛒 LoopKart
 
-Currently, two official plugins are available:
+LoopKart is a modern marketplace platform where users can **list**, **sell**, and **buy** products with ease. Built for speed, scalability, and simplicity, LoopKart empowers individuals and small businesses to showcase their goods in a clean, intuitive interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Table of Contents
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Getting Started](#getting-started)
+- [API Reference](#api-reference)
+- [Environment Variables](#environment-variables)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
+- [License](#license)
+- [Live Demo](#live-demo)
+- [Author](#author)
+
+---
+
+## 🚀 Features
+
+- 🧾 Product Listings – Create detailed listings with images, pricing, and descriptions.
+- 💳 Buy & Sell – Seamless purchase flow with secure payment integration.
+- 🛠️ User Dashboard – Manage listings, track orders, and view analytics.
+- 🧑‍🤝‍🧑 User Profiles – Build trust with seller ratings and buyer reviews.
+- 📱 Responsive Design – Optimized for mobile and desktop experiences.
+
+---
+
+## 🧰 Tech Stack
+
+| Layer      |  Technology            |
+|------------|------------------------|
+| Frontend   | React,                 |
+| Backend    | Firebase               |
+| Hosting    | Vercel, Render         |
+
+
+---
+
+
+## 👨‍💻 Creator
+
+Built by [Makhubele Langavi Clyde](https://www.linkedin.com/in/langavi-makhubele-clyde), a frontend developer and founder of LoopKart and Matric IQ. Passionate about clean code, scalable systems, and educational impact.
+
+---
+
+## 📬 Feedback & Contributions
+
+Have ideas or want to contribute? Open an issue or reach out via [LinkedIn](https://www.linkedin.com/in/langavi-makhubele-clyde). Let's build the future of learning together.
