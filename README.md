@@ -1,4 +1,4 @@
-🔗 [Visit Matric IQ Live](https://matric-iq.vercel.app/)
+🔗 [Visit LoopKart Live](https://loopkart.co.za/)
 
 # 🛒 LoopKart
 
@@ -8,16 +8,11 @@ LoopKart is a modern marketplace platform where users can **list**, **sell**, an
 
 ## 📌 Table of Contents
 
-- [Features](#features)
-- [Tech Stack](#tech-stack)
-- [Getting Started](#getting-started)
-- [API Reference](#api-reference)
-- [Environment Variables](#environment-variables)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [License](#license)
-- [Live Demo](#live-demo)
-- [Author](#author)
+- Live Demo
+- Features
+- Tech Stack
+- API Reference
+- Author
 
 ---
 
@@ -25,7 +20,6 @@ LoopKart is a modern marketplace platform where users can **list**, **sell**, an
 
 - 🧾 Product Listings – Create detailed listings with images, pricing, and descriptions.
 - 💳 Buy & Sell – Seamless purchase flow with secure payment integration.
-- 🛠️ User Dashboard – Manage listings, track orders, and view analytics.
 - 🧑‍🤝‍🧑 User Profiles – Build trust with seller ratings and buyer reviews.
 - 📱 Responsive Design – Optimized for mobile and desktop experiences.
 
@@ -41,6 +35,24 @@ LoopKart is a modern marketplace platform where users can **list**, **sell**, an
 
 
 ---
+
+## API Reference
+
+## 🔹 GET /api/orders/:userId
+```
+Retrieve all orders placed by a user.
+
+json
+[
+  {
+    "orderId": "xyz789",
+    "product": "Wireless Headphones",
+    "status": "Delivered",
+    "date": "2025-08-20"
+  }
+]
+
+```
 
 
 ## 👨‍💻 Creator
